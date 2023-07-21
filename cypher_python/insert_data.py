@@ -162,22 +162,22 @@ for i in range(500):
 # DECISAO -[FAZ_REFERENCIA_A]-> LEI
 # Randomly assinging one law to a decision. It will be usefull to scale the records and test the perfomance with large data.
 for i in range(500):
-    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_A", "lei" + str(random.randint(1, 10)))
+    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_A", "lei" + str(random.randint(1, 10)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
 
 # DECISAO -[FAZ_REFERENCIA_AO]-> ARTIGO
 # Randomly assinging one article to a decision. It will be usefull to scale the records and test the perfomance with large data.
 for i in range(500):
-    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_AO", "artigo" + str(random.randint(1, 50)))
+    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_AO", "artigo" + str(random.randint(1, 50)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
 
 # DECISAO -[FAZ_REFERENCIA_AO]-> PARAGRAFO
 # Randomly assinging one paragrafo to a decision. It will be usefull to scale the records and test the perfomance with large data.
 for i in range(500):
-    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_AO", "paragrafo" + str(random.randint(1, 250)))
+    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_AO", "paragrafo" + str(random.randint(1, 250)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
 
 # DECISAO -[FAZ_REFERENCIA_A]-> ALINEA
 # Randomly assinging one alinea to a decision. It will be usefull to scale the records and test the perfomance with large data.
 for i in range(500):
-    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_A", "alinea" + str(random.randint(1, 500)))
+    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_A", "alinea" + str(random.randint(1, 500)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
     
 # LEI -[POSSUI_ARTIGO]-> ARTIGO
 # Each law has five articles
