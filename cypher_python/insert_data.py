@@ -99,7 +99,7 @@ def load_decisoes(dataframe):
 
 # Loading Processos
 def load_processos(dataframe):
-    [create_node("processo" +  str(row["numero"]), "Processo", {"id": "processo" +  str(row["numero"]), "numero": row["numero"], "titulo": row["titulo"]}) for _, row in dataframe.iterrows()]
+    [create_node("processo" +  str(row["numero"]), "Processo", {"id": "processo" +  str(row["numero"]), "numero": row["numero"], "titulo": row["titulo"], "tipo_de_direito": row["tipo_de_direito"]}) for _, row in dataframe.iterrows()]
 
 # Loading Advogados
 def load_advogados(dataframe):
@@ -133,19 +133,21 @@ def load_alineas(dataframe):
 # Read data files
 ########################################################
 
-def load_data(file_path, load_function):
-    df = pd.read_csv(file_path)
+DATA_DIR = './data_pt_BR/'
+
+def load_data(file_name, load_function):
+    df = pd.read_csv(DATA_DIR + file_name)
     load_function(df)
 
-load_data("./data/decisoes.csv", load_decisoes)
-load_data("./data/processos.csv", load_processos)
-load_data("./data/advogados.csv", load_advogados)
-load_data("./data/partes.csv", load_partes)
-load_data("./data/juizes.csv", load_juizes)
-load_data("./data/leis.csv", load_leis)
-load_data("./data/artigos.csv", load_artigos)
-load_data("./data/paragrafos.csv", load_paragrafos)
-load_data("./data/alineas.csv", load_alineas)
+load_data("decisoes.csv", load_decisoes)
+load_data("processos.csv", load_processos)
+load_data("advogados.csv", load_advogados)
+load_data("partes.csv", load_partes)
+load_data("juizes.csv", load_juizes)
+load_data("leis.csv", load_leis)
+load_data("artigos.csv", load_artigos)
+load_data("paragrafos.csv", load_paragrafos)
+load_data("alineas.csv", load_alineas)
 
 
 #########################################################

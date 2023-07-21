@@ -1,501 +1,501 @@
-numero,titulo,decisao
-1,titulo1,decisao1
-2,titulo2,decisao2
-3,titulo3,decisao3
-4,titulo4,decisao4
-5,titulo5,decisao5
-6,titulo6,decisao6
-7,titulo7,decisao7
-8,titulo8,decisao8
-9,titulo9,decisao9
-10,titulo10,decisao10
-11,titulo11,decisao11
-12,titulo12,decisao12
-13,titulo13,decisao13
-14,titulo14,decisao14
-15,titulo15,decisao15
-16,titulo16,decisao16
-17,titulo17,decisao17
-18,titulo18,decisao18
-19,titulo19,decisao19
-20,titulo20,decisao20
-21,titulo21,decisao21
-22,titulo22,decisao22
-23,titulo23,decisao23
-24,titulo24,decisao24
-25,titulo25,decisao25
-26,titulo26,decisao26
-27,titulo27,decisao27
-28,titulo28,decisao28
-29,titulo29,decisao29
-30,titulo30,decisao30
-31,titulo31,decisao31
-32,titulo32,decisao32
-33,titulo33,decisao33
-34,titulo34,decisao34
-35,titulo35,decisao35
-36,titulo36,decisao36
-37,titulo37,decisao37
-38,titulo38,decisao38
-39,titulo39,decisao39
-40,titulo40,decisao40
-41,titulo41,decisao41
-42,titulo42,decisao42
-43,titulo43,decisao43
-44,titulo44,decisao44
-45,titulo45,decisao45
-46,titulo46,decisao46
-47,titulo47,decisao47
-48,titulo48,decisao48
-49,titulo49,decisao49
-50,titulo50,decisao50
-51,titulo51,decisao51
-52,titulo52,decisao52
-53,titulo53,decisao53
-54,titulo54,decisao54
-55,titulo55,decisao55
-56,titulo56,decisao56
-57,titulo57,decisao57
-58,titulo58,decisao58
-59,titulo59,decisao59
-60,titulo60,decisao60
-61,titulo61,decisao61
-62,titulo62,decisao62
-63,titulo63,decisao63
-64,titulo64,decisao64
-65,titulo65,decisao65
-66,titulo66,decisao66
-67,titulo67,decisao67
-68,titulo68,decisao68
-69,titulo69,decisao69
-70,titulo70,decisao70
-71,titulo71,decisao71
-72,titulo72,decisao72
-73,titulo73,decisao73
-74,titulo74,decisao74
-75,titulo75,decisao75
-76,titulo76,decisao76
-77,titulo77,decisao77
-78,titulo78,decisao78
-79,titulo79,decisao79
-80,titulo80,decisao80
-81,titulo81,decisao81
-82,titulo82,decisao82
-83,titulo83,decisao83
-84,titulo84,decisao84
-85,titulo85,decisao85
-86,titulo86,decisao86
-87,titulo87,decisao87
-88,titulo88,decisao88
-89,titulo89,decisao89
-90,titulo90,decisao90
-91,titulo91,decisao91
-92,titulo92,decisao92
-93,titulo93,decisao93
-94,titulo94,decisao94
-95,titulo95,decisao95
-96,titulo96,decisao96
-97,titulo97,decisao97
-98,titulo98,decisao98
-99,titulo99,decisao99
-100,titulo100,decisao100
-101,titulo101,decisao101
-102,titulo102,decisao102
-103,titulo103,decisao103
-104,titulo104,decisao104
-105,titulo105,decisao105
-106,titulo106,decisao106
-107,titulo107,decisao107
-108,titulo108,decisao108
-109,titulo109,decisao109
-110,titulo110,decisao110
-111,titulo111,decisao111
-112,titulo112,decisao112
-113,titulo113,decisao113
-114,titulo114,decisao114
-115,titulo115,decisao115
-116,titulo116,decisao116
-117,titulo117,decisao117
-118,titulo118,decisao118
-119,titulo119,decisao119
-120,titulo120,decisao120
-121,titulo121,decisao121
-122,titulo122,decisao122
-123,titulo123,decisao123
-124,titulo124,decisao124
-125,titulo125,decisao125
-126,titulo126,decisao126
-127,titulo127,decisao127
-128,titulo128,decisao128
-129,titulo129,decisao129
-130,titulo130,decisao130
-131,titulo131,decisao131
-132,titulo132,decisao132
-133,titulo133,decisao133
-134,titulo134,decisao134
-135,titulo135,decisao135
-136,titulo136,decisao136
-137,titulo137,decisao137
-138,titulo138,decisao138
-139,titulo139,decisao139
-140,titulo140,decisao140
-141,titulo141,decisao141
-142,titulo142,decisao142
-143,titulo143,decisao143
-144,titulo144,decisao144
-145,titulo145,decisao145
-146,titulo146,decisao146
-147,titulo147,decisao147
-148,titulo148,decisao148
-149,titulo149,decisao149
-150,titulo150,decisao150
-151,titulo151,decisao151
-152,titulo152,decisao152
-153,titulo153,decisao153
-154,titulo154,decisao154
-155,titulo155,decisao155
-156,titulo156,decisao156
-157,titulo157,decisao157
-158,titulo158,decisao158
-159,titulo159,decisao159
-160,titulo160,decisao160
-161,titulo161,decisao161
-162,titulo162,decisao162
-163,titulo163,decisao163
-164,titulo164,decisao164
-165,titulo165,decisao165
-166,titulo166,decisao166
-167,titulo167,decisao167
-168,titulo168,decisao168
-169,titulo169,decisao169
-170,titulo170,decisao170
-171,titulo171,decisao171
-172,titulo172,decisao172
-173,titulo173,decisao173
-174,titulo174,decisao174
-175,titulo175,decisao175
-176,titulo176,decisao176
-177,titulo177,decisao177
-178,titulo178,decisao178
-179,titulo179,decisao179
-180,titulo180,decisao180
-181,titulo181,decisao181
-182,titulo182,decisao182
-183,titulo183,decisao183
-184,titulo184,decisao184
-185,titulo185,decisao185
-186,titulo186,decisao186
-187,titulo187,decisao187
-188,titulo188,decisao188
-189,titulo189,decisao189
-190,titulo190,decisao190
-191,titulo191,decisao191
-192,titulo192,decisao192
-193,titulo193,decisao193
-194,titulo194,decisao194
-195,titulo195,decisao195
-196,titulo196,decisao196
-197,titulo197,decisao197
-198,titulo198,decisao198
-199,titulo199,decisao199
-200,titulo200,decisao200
-201,titulo201,decisao201
-202,titulo202,decisao202
-203,titulo203,decisao203
-204,titulo204,decisao204
-205,titulo205,decisao205
-206,titulo206,decisao206
-207,titulo207,decisao207
-208,titulo208,decisao208
-209,titulo209,decisao209
-210,titulo210,decisao210
-211,titulo211,decisao211
-212,titulo212,decisao212
-213,titulo213,decisao213
-214,titulo214,decisao214
-215,titulo215,decisao215
-216,titulo216,decisao216
-217,titulo217,decisao217
-218,titulo218,decisao218
-219,titulo219,decisao219
-220,titulo220,decisao220
-221,titulo221,decisao221
-222,titulo222,decisao222
-223,titulo223,decisao223
-224,titulo224,decisao224
-225,titulo225,decisao225
-226,titulo226,decisao226
-227,titulo227,decisao227
-228,titulo228,decisao228
-229,titulo229,decisao229
-230,titulo230,decisao230
-231,titulo231,decisao231
-232,titulo232,decisao232
-233,titulo233,decisao233
-234,titulo234,decisao234
-235,titulo235,decisao235
-236,titulo236,decisao236
-237,titulo237,decisao237
-238,titulo238,decisao238
-239,titulo239,decisao239
-240,titulo240,decisao240
-241,titulo241,decisao241
-242,titulo242,decisao242
-243,titulo243,decisao243
-244,titulo244,decisao244
-245,titulo245,decisao245
-246,titulo246,decisao246
-247,titulo247,decisao247
-248,titulo248,decisao248
-249,titulo249,decisao249
-250,titulo250,decisao250
-251,titulo251,decisao251
-252,titulo252,decisao252
-253,titulo253,decisao253
-254,titulo254,decisao254
-255,titulo255,decisao255
-256,titulo256,decisao256
-257,titulo257,decisao257
-258,titulo258,decisao258
-259,titulo259,decisao259
-260,titulo260,decisao260
-261,titulo261,decisao261
-262,titulo262,decisao262
-263,titulo263,decisao263
-264,titulo264,decisao264
-265,titulo265,decisao265
-266,titulo266,decisao266
-267,titulo267,decisao267
-268,titulo268,decisao268
-269,titulo269,decisao269
-270,titulo270,decisao270
-271,titulo271,decisao271
-272,titulo272,decisao272
-273,titulo273,decisao273
-274,titulo274,decisao274
-275,titulo275,decisao275
-276,titulo276,decisao276
-277,titulo277,decisao277
-278,titulo278,decisao278
-279,titulo279,decisao279
-280,titulo280,decisao280
-281,titulo281,decisao281
-282,titulo282,decisao282
-283,titulo283,decisao283
-284,titulo284,decisao284
-285,titulo285,decisao285
-286,titulo286,decisao286
-287,titulo287,decisao287
-288,titulo288,decisao288
-289,titulo289,decisao289
-290,titulo290,decisao290
-291,titulo291,decisao291
-292,titulo292,decisao292
-293,titulo293,decisao293
-294,titulo294,decisao294
-295,titulo295,decisao295
-296,titulo296,decisao296
-297,titulo297,decisao297
-298,titulo298,decisao298
-299,titulo299,decisao299
-300,titulo300,decisao300
-301,titulo301,decisao301
-302,titulo302,decisao302
-303,titulo303,decisao303
-304,titulo304,decisao304
-305,titulo305,decisao305
-306,titulo306,decisao306
-307,titulo307,decisao307
-308,titulo308,decisao308
-309,titulo309,decisao309
-310,titulo310,decisao310
-311,titulo311,decisao311
-312,titulo312,decisao312
-313,titulo313,decisao313
-314,titulo314,decisao314
-315,titulo315,decisao315
-316,titulo316,decisao316
-317,titulo317,decisao317
-318,titulo318,decisao318
-319,titulo319,decisao319
-320,titulo320,decisao320
-321,titulo321,decisao321
-322,titulo322,decisao322
-323,titulo323,decisao323
-324,titulo324,decisao324
-325,titulo325,decisao325
-326,titulo326,decisao326
-327,titulo327,decisao327
-328,titulo328,decisao328
-329,titulo329,decisao329
-330,titulo330,decisao330
-331,titulo331,decisao331
-332,titulo332,decisao332
-333,titulo333,decisao333
-334,titulo334,decisao334
-335,titulo335,decisao335
-336,titulo336,decisao336
-337,titulo337,decisao337
-338,titulo338,decisao338
-339,titulo339,decisao339
-340,titulo340,decisao340
-341,titulo341,decisao341
-342,titulo342,decisao342
-343,titulo343,decisao343
-344,titulo344,decisao344
-345,titulo345,decisao345
-346,titulo346,decisao346
-347,titulo347,decisao347
-348,titulo348,decisao348
-349,titulo349,decisao349
-350,titulo350,decisao350
-351,titulo351,decisao351
-352,titulo352,decisao352
-353,titulo353,decisao353
-354,titulo354,decisao354
-355,titulo355,decisao355
-356,titulo356,decisao356
-357,titulo357,decisao357
-358,titulo358,decisao358
-359,titulo359,decisao359
-360,titulo360,decisao360
-361,titulo361,decisao361
-362,titulo362,decisao362
-363,titulo363,decisao363
-364,titulo364,decisao364
-365,titulo365,decisao365
-366,titulo366,decisao366
-367,titulo367,decisao367
-368,titulo368,decisao368
-369,titulo369,decisao369
-370,titulo370,decisao370
-371,titulo371,decisao371
-372,titulo372,decisao372
-373,titulo373,decisao373
-374,titulo374,decisao374
-375,titulo375,decisao375
-376,titulo376,decisao376
-377,titulo377,decisao377
-378,titulo378,decisao378
-379,titulo379,decisao379
-380,titulo380,decisao380
-381,titulo381,decisao381
-382,titulo382,decisao382
-383,titulo383,decisao383
-384,titulo384,decisao384
-385,titulo385,decisao385
-386,titulo386,decisao386
-387,titulo387,decisao387
-388,titulo388,decisao388
-389,titulo389,decisao389
-390,titulo390,decisao390
-391,titulo391,decisao391
-392,titulo392,decisao392
-393,titulo393,decisao393
-394,titulo394,decisao394
-395,titulo395,decisao395
-396,titulo396,decisao396
-397,titulo397,decisao397
-398,titulo398,decisao398
-399,titulo399,decisao399
-400,titulo400,decisao400
-401,titulo401,decisao401
-402,titulo402,decisao402
-403,titulo403,decisao403
-404,titulo404,decisao404
-405,titulo405,decisao405
-406,titulo406,decisao406
-407,titulo407,decisao407
-408,titulo408,decisao408
-409,titulo409,decisao409
-410,titulo410,decisao410
-411,titulo411,decisao411
-412,titulo412,decisao412
-413,titulo413,decisao413
-414,titulo414,decisao414
-415,titulo415,decisao415
-416,titulo416,decisao416
-417,titulo417,decisao417
-418,titulo418,decisao418
-419,titulo419,decisao419
-420,titulo420,decisao420
-421,titulo421,decisao421
-422,titulo422,decisao422
-423,titulo423,decisao423
-424,titulo424,decisao424
-425,titulo425,decisao425
-426,titulo426,decisao426
-427,titulo427,decisao427
-428,titulo428,decisao428
-429,titulo429,decisao429
-430,titulo430,decisao430
-431,titulo431,decisao431
-432,titulo432,decisao432
-433,titulo433,decisao433
-434,titulo434,decisao434
-435,titulo435,decisao435
-436,titulo436,decisao436
-437,titulo437,decisao437
-438,titulo438,decisao438
-439,titulo439,decisao439
-440,titulo440,decisao440
-441,titulo441,decisao441
-442,titulo442,decisao442
-443,titulo443,decisao443
-444,titulo444,decisao444
-445,titulo445,decisao445
-446,titulo446,decisao446
-447,titulo447,decisao447
-448,titulo448,decisao448
-449,titulo449,decisao449
-450,titulo450,decisao450
-451,titulo451,decisao451
-452,titulo452,decisao452
-453,titulo453,decisao453
-454,titulo454,decisao454
-455,titulo455,decisao455
-456,titulo456,decisao456
-457,titulo457,decisao457
-458,titulo458,decisao458
-459,titulo459,decisao459
-460,titulo460,decisao460
-461,titulo461,decisao461
-462,titulo462,decisao462
-463,titulo463,decisao463
-464,titulo464,decisao464
-465,titulo465,decisao465
-466,titulo466,decisao466
-467,titulo467,decisao467
-468,titulo468,decisao468
-469,titulo469,decisao469
-470,titulo470,decisao470
-471,titulo471,decisao471
-472,titulo472,decisao472
-473,titulo473,decisao473
-474,titulo474,decisao474
-475,titulo475,decisao475
-476,titulo476,decisao476
-477,titulo477,decisao477
-478,titulo478,decisao478
-479,titulo479,decisao479
-480,titulo480,decisao480
-481,titulo481,decisao481
-482,titulo482,decisao482
-483,titulo483,decisao483
-484,titulo484,decisao484
-485,titulo485,decisao485
-486,titulo486,decisao486
-487,titulo487,decisao487
-488,titulo488,decisao488
-489,titulo489,decisao489
-490,titulo490,decisao490
-491,titulo491,decisao491
-492,titulo492,decisao492
-493,titulo493,decisao493
-494,titulo494,decisao494
-495,titulo495,decisao495
-496,titulo496,decisao496
-497,titulo497,decisao497
-498,titulo498,decisao498
-499,titulo499,decisao499
-500,titulo500,decisao500
+numero,titulo,decisao,tipo_de_direito
+1,titulo1,decisao1,Direito Civil
+2,titulo2,decisao2,Direito Civil
+3,titulo3,decisao3,Direito Civil
+4,titulo4,decisao4,Direito Penal
+5,titulo5,decisao5,Direito Penal
+6,titulo6,decisao6,Direito Penal
+7,titulo7,decisao7,Direito Tributário
+8,titulo8,decisao8,Direito Tributário
+9,titulo9,decisao9,Direito Tributário
+10,titulo10,decisao10,Direito Digital
+11,titulo11,decisao11,Direito Digital
+12,titulo12,decisao12,Direito Digital
+13,titulo13,decisao13,Direito Ambiental
+14,titulo14,decisao14,Direito Ambiental
+15,titulo15,decisao15,Direito Ambiental
+16,titulo16,decisao16,Direito do Consumidor
+17,titulo17,decisao17,Direito do Consumidor
+18,titulo18,decisao18,Direito do Consumidor
+19,titulo19,decisao19,Direito Civil
+20,titulo20,decisao20,Direito Civil
+21,titulo21,decisao21,Direito Civil
+22,titulo22,decisao22,Direito Penal
+23,titulo23,decisao23,Direito Penal
+24,titulo24,decisao24,Direito Penal
+25,titulo25,decisao25,Direito Tributário
+26,titulo26,decisao26,Direito Tributário
+27,titulo27,decisao27,Direito Tributário
+28,titulo28,decisao28,Direito Digital
+29,titulo29,decisao29,Direito Digital
+30,titulo30,decisao30,Direito Digital
+31,titulo31,decisao31,Direito Ambiental
+32,titulo32,decisao32,Direito Ambiental
+33,titulo33,decisao33,Direito Ambiental
+34,titulo34,decisao34,Direito do Consumidor
+35,titulo35,decisao35,Direito do Consumidor
+36,titulo36,decisao36,Direito do Consumidor
+37,titulo37,decisao37,Direito Civil
+38,titulo38,decisao38,Direito Civil
+39,titulo39,decisao39,Direito Civil
+40,titulo40,decisao40,Direito Penal
+41,titulo41,decisao41,Direito Penal
+42,titulo42,decisao42,Direito Penal
+43,titulo43,decisao43,Direito Tributário
+44,titulo44,decisao44,Direito Tributário
+45,titulo45,decisao45,Direito Tributário
+46,titulo46,decisao46,Direito Digital
+47,titulo47,decisao47,Direito Digital
+48,titulo48,decisao48,Direito Digital
+49,titulo49,decisao49,Direito Ambiental
+50,titulo50,decisao50,Direito Ambiental
+51,titulo51,decisao51,Direito Ambiental
+52,titulo52,decisao52,Direito do Consumidor
+53,titulo53,decisao53,Direito do Consumidor
+54,titulo54,decisao54,Direito do Consumidor
+55,titulo55,decisao55,Direito Civil
+56,titulo56,decisao56,Direito Civil
+57,titulo57,decisao57,Direito Civil
+58,titulo58,decisao58,Direito Penal
+59,titulo59,decisao59,Direito Penal
+60,titulo60,decisao60,Direito Penal
+61,titulo61,decisao61,Direito Tributário
+62,titulo62,decisao62,Direito Tributário
+63,titulo63,decisao63,Direito Tributário
+64,titulo64,decisao64,Direito Digital
+65,titulo65,decisao65,Direito Digital
+66,titulo66,decisao66,Direito Digital
+67,titulo67,decisao67,Direito Ambiental
+68,titulo68,decisao68,Direito Ambiental
+69,titulo69,decisao69,Direito Ambiental
+70,titulo70,decisao70,Direito do Consumidor
+71,titulo71,decisao71,Direito do Consumidor
+72,titulo72,decisao72,Direito do Consumidor
+73,titulo73,decisao73,Direito Civil
+74,titulo74,decisao74,Direito Civil
+75,titulo75,decisao75,Direito Civil
+76,titulo76,decisao76,Direito Penal
+77,titulo77,decisao77,Direito Penal
+78,titulo78,decisao78,Direito Penal
+79,titulo79,decisao79,Direito Tributário
+80,titulo80,decisao80,Direito Tributário
+81,titulo81,decisao81,Direito Tributário
+82,titulo82,decisao82,Direito Digital
+83,titulo83,decisao83,Direito Digital
+84,titulo84,decisao84,Direito Digital
+85,titulo85,decisao85,Direito Ambiental
+86,titulo86,decisao86,Direito Ambiental
+87,titulo87,decisao87,Direito Ambiental
+88,titulo88,decisao88,Direito do Consumidor
+89,titulo89,decisao89,Direito do Consumidor
+90,titulo90,decisao90,Direito do Consumidor
+91,titulo91,decisao91,Direito Civil
+92,titulo92,decisao92,Direito Civil
+93,titulo93,decisao93,Direito Civil
+94,titulo94,decisao94,Direito Penal
+95,titulo95,decisao95,Direito Penal
+96,titulo96,decisao96,Direito Penal
+97,titulo97,decisao97,Direito Tributário
+98,titulo98,decisao98,Direito Tributário
+99,titulo99,decisao99,Direito Tributário
+100,titulo100,decisao100,Direito Digital
+101,titulo101,decisao101,Direito Digital
+102,titulo102,decisao102,Direito Digital
+103,titulo103,decisao103,Direito Ambiental
+104,titulo104,decisao104,Direito Ambiental
+105,titulo105,decisao105,Direito Ambiental
+106,titulo106,decisao106,Direito do Consumidor
+107,titulo107,decisao107,Direito do Consumidor
+108,titulo108,decisao108,Direito do Consumidor
+109,titulo109,decisao109,Direito Civil
+110,titulo110,decisao110,Direito Civil
+111,titulo111,decisao111,Direito Civil
+112,titulo112,decisao112,Direito Penal
+113,titulo113,decisao113,Direito Penal
+114,titulo114,decisao114,Direito Penal
+115,titulo115,decisao115,Direito Tributário
+116,titulo116,decisao116,Direito Tributário
+117,titulo117,decisao117,Direito Tributário
+118,titulo118,decisao118,Direito Digital
+119,titulo119,decisao119,Direito Digital
+120,titulo120,decisao120,Direito Digital
+121,titulo121,decisao121,Direito Ambiental
+122,titulo122,decisao122,Direito Ambiental
+123,titulo123,decisao123,Direito Ambiental
+124,titulo124,decisao124,Direito do Consumidor
+125,titulo125,decisao125,Direito do Consumidor
+126,titulo126,decisao126,Direito do Consumidor
+127,titulo127,decisao127,Direito Civil
+128,titulo128,decisao128,Direito Civil
+129,titulo129,decisao129,Direito Civil
+130,titulo130,decisao130,Direito Penal
+131,titulo131,decisao131,Direito Penal
+132,titulo132,decisao132,Direito Penal
+133,titulo133,decisao133,Direito Tributário
+134,titulo134,decisao134,Direito Tributário
+135,titulo135,decisao135,Direito Tributário
+136,titulo136,decisao136,Direito Digital
+137,titulo137,decisao137,Direito Digital
+138,titulo138,decisao138,Direito Digital
+139,titulo139,decisao139,Direito Ambiental
+140,titulo140,decisao140,Direito Ambiental
+141,titulo141,decisao141,Direito Ambiental
+142,titulo142,decisao142,Direito do Consumidor
+143,titulo143,decisao143,Direito do Consumidor
+144,titulo144,decisao144,Direito do Consumidor
+145,titulo145,decisao145,Direito Civil
+146,titulo146,decisao146,Direito Civil
+147,titulo147,decisao147,Direito Civil
+148,titulo148,decisao148,Direito Penal
+149,titulo149,decisao149,Direito Penal
+150,titulo150,decisao150,Direito Penal
+151,titulo151,decisao151,Direito Tributário
+152,titulo152,decisao152,Direito Tributário
+153,titulo153,decisao153,Direito Tributário
+154,titulo154,decisao154,Direito Digital
+155,titulo155,decisao155,Direito Digital
+156,titulo156,decisao156,Direito Digital
+157,titulo157,decisao157,Direito Ambiental
+158,titulo158,decisao158,Direito Ambiental
+159,titulo159,decisao159,Direito Ambiental
+160,titulo160,decisao160,Direito do Consumidor
+161,titulo161,decisao161,Direito do Consumidor
+162,titulo162,decisao162,Direito do Consumidor
+163,titulo163,decisao163,Direito Civil
+164,titulo164,decisao164,Direito Civil
+165,titulo165,decisao165,Direito Civil
+166,titulo166,decisao166,Direito Penal
+167,titulo167,decisao167,Direito Penal
+168,titulo168,decisao168,Direito Penal
+169,titulo169,decisao169,Direito Tributário
+170,titulo170,decisao170,Direito Tributário
+171,titulo171,decisao171,Direito Tributário
+172,titulo172,decisao172,Direito Digital
+173,titulo173,decisao173,Direito Digital
+174,titulo174,decisao174,Direito Digital
+175,titulo175,decisao175,Direito Ambiental
+176,titulo176,decisao176,Direito Ambiental
+177,titulo177,decisao177,Direito Ambiental
+178,titulo178,decisao178,Direito do Consumidor
+179,titulo179,decisao179,Direito do Consumidor
+180,titulo180,decisao180,Direito do Consumidor
+181,titulo181,decisao181,Direito Civil
+182,titulo182,decisao182,Direito Civil
+183,titulo183,decisao183,Direito Civil
+184,titulo184,decisao184,Direito Penal
+185,titulo185,decisao185,Direito Penal
+186,titulo186,decisao186,Direito Penal
+187,titulo187,decisao187,Direito Tributário
+188,titulo188,decisao188,Direito Tributário
+189,titulo189,decisao189,Direito Tributário
+190,titulo190,decisao190,Direito Digital
+191,titulo191,decisao191,Direito Digital
+192,titulo192,decisao192,Direito Digital
+193,titulo193,decisao193,Direito Ambiental
+194,titulo194,decisao194,Direito Ambiental
+195,titulo195,decisao195,Direito Ambiental
+196,titulo196,decisao196,Direito do Consumidor
+197,titulo197,decisao197,Direito do Consumidor
+198,titulo198,decisao198,Direito do Consumidor
+199,titulo199,decisao199,Direito Civil
+200,titulo200,decisao200,Direito Civil
+201,titulo201,decisao201,Direito Civil
+202,titulo202,decisao202,Direito Penal
+203,titulo203,decisao203,Direito Penal
+204,titulo204,decisao204,Direito Penal
+205,titulo205,decisao205,Direito Tributário
+206,titulo206,decisao206,Direito Tributário
+207,titulo207,decisao207,Direito Tributário
+208,titulo208,decisao208,Direito Digital
+209,titulo209,decisao209,Direito Digital
+210,titulo210,decisao210,Direito Digital
+211,titulo211,decisao211,Direito Ambiental
+212,titulo212,decisao212,Direito Ambiental
+213,titulo213,decisao213,Direito Ambiental
+214,titulo214,decisao214,Direito do Consumidor
+215,titulo215,decisao215,Direito do Consumidor
+216,titulo216,decisao216,Direito do Consumidor
+217,titulo217,decisao217,Direito Civil
+218,titulo218,decisao218,Direito Civil
+219,titulo219,decisao219,Direito Civil
+220,titulo220,decisao220,Direito Penal
+221,titulo221,decisao221,Direito Penal
+222,titulo222,decisao222,Direito Penal
+223,titulo223,decisao223,Direito Tributário
+224,titulo224,decisao224,Direito Tributário
+225,titulo225,decisao225,Direito Tributário
+226,titulo226,decisao226,Direito Digital
+227,titulo227,decisao227,Direito Digital
+228,titulo228,decisao228,Direito Digital
+229,titulo229,decisao229,Direito Ambiental
+230,titulo230,decisao230,Direito Ambiental
+231,titulo231,decisao231,Direito Ambiental
+232,titulo232,decisao232,Direito do Consumidor
+233,titulo233,decisao233,Direito do Consumidor
+234,titulo234,decisao234,Direito do Consumidor
+235,titulo235,decisao235,Direito Civil
+236,titulo236,decisao236,Direito Civil
+237,titulo237,decisao237,Direito Civil
+238,titulo238,decisao238,Direito Penal
+239,titulo239,decisao239,Direito Penal
+240,titulo240,decisao240,Direito Penal
+241,titulo241,decisao241,Direito Tributário
+242,titulo242,decisao242,Direito Tributário
+243,titulo243,decisao243,Direito Tributário
+244,titulo244,decisao244,Direito Digital
+245,titulo245,decisao245,Direito Digital
+246,titulo246,decisao246,Direito Digital
+247,titulo247,decisao247,Direito Ambiental
+248,titulo248,decisao248,Direito Ambiental
+249,titulo249,decisao249,Direito Ambiental
+250,titulo250,decisao250,Direito do Consumidor
+251,titulo251,decisao251,
+252,titulo252,decisao252,
+253,titulo253,decisao253,
+254,titulo254,decisao254,
+255,titulo255,decisao255,
+256,titulo256,decisao256,
+257,titulo257,decisao257,
+258,titulo258,decisao258,
+259,titulo259,decisao259,
+260,titulo260,decisao260,
+261,titulo261,decisao261,
+262,titulo262,decisao262,
+263,titulo263,decisao263,
+264,titulo264,decisao264,
+265,titulo265,decisao265,
+266,titulo266,decisao266,
+267,titulo267,decisao267,
+268,titulo268,decisao268,
+269,titulo269,decisao269,
+270,titulo270,decisao270,
+271,titulo271,decisao271,
+272,titulo272,decisao272,
+273,titulo273,decisao273,
+274,titulo274,decisao274,
+275,titulo275,decisao275,
+276,titulo276,decisao276,
+277,titulo277,decisao277,
+278,titulo278,decisao278,
+279,titulo279,decisao279,
+280,titulo280,decisao280,
+281,titulo281,decisao281,
+282,titulo282,decisao282,
+283,titulo283,decisao283,
+284,titulo284,decisao284,
+285,titulo285,decisao285,
+286,titulo286,decisao286,
+287,titulo287,decisao287,
+288,titulo288,decisao288,
+289,titulo289,decisao289,
+290,titulo290,decisao290,
+291,titulo291,decisao291,
+292,titulo292,decisao292,
+293,titulo293,decisao293,
+294,titulo294,decisao294,
+295,titulo295,decisao295,
+296,titulo296,decisao296,
+297,titulo297,decisao297,
+298,titulo298,decisao298,
+299,titulo299,decisao299,
+300,titulo300,decisao300,
+301,titulo301,decisao301,
+302,titulo302,decisao302,
+303,titulo303,decisao303,
+304,titulo304,decisao304,
+305,titulo305,decisao305,
+306,titulo306,decisao306,
+307,titulo307,decisao307,
+308,titulo308,decisao308,
+309,titulo309,decisao309,
+310,titulo310,decisao310,
+311,titulo311,decisao311,
+312,titulo312,decisao312,
+313,titulo313,decisao313,
+314,titulo314,decisao314,
+315,titulo315,decisao315,
+316,titulo316,decisao316,
+317,titulo317,decisao317,
+318,titulo318,decisao318,
+319,titulo319,decisao319,
+320,titulo320,decisao320,
+321,titulo321,decisao321,
+322,titulo322,decisao322,
+323,titulo323,decisao323,
+324,titulo324,decisao324,
+325,titulo325,decisao325,
+326,titulo326,decisao326,
+327,titulo327,decisao327,
+328,titulo328,decisao328,
+329,titulo329,decisao329,
+330,titulo330,decisao330,
+331,titulo331,decisao331,
+332,titulo332,decisao332,
+333,titulo333,decisao333,
+334,titulo334,decisao334,
+335,titulo335,decisao335,
+336,titulo336,decisao336,
+337,titulo337,decisao337,
+338,titulo338,decisao338,
+339,titulo339,decisao339,
+340,titulo340,decisao340,
+341,titulo341,decisao341,
+342,titulo342,decisao342,
+343,titulo343,decisao343,
+344,titulo344,decisao344,
+345,titulo345,decisao345,
+346,titulo346,decisao346,
+347,titulo347,decisao347,
+348,titulo348,decisao348,
+349,titulo349,decisao349,
+350,titulo350,decisao350,
+351,titulo351,decisao351,
+352,titulo352,decisao352,
+353,titulo353,decisao353,
+354,titulo354,decisao354,
+355,titulo355,decisao355,
+356,titulo356,decisao356,
+357,titulo357,decisao357,
+358,titulo358,decisao358,
+359,titulo359,decisao359,
+360,titulo360,decisao360,
+361,titulo361,decisao361,
+362,titulo362,decisao362,
+363,titulo363,decisao363,
+364,titulo364,decisao364,
+365,titulo365,decisao365,
+366,titulo366,decisao366,
+367,titulo367,decisao367,
+368,titulo368,decisao368,
+369,titulo369,decisao369,
+370,titulo370,decisao370,
+371,titulo371,decisao371,
+372,titulo372,decisao372,
+373,titulo373,decisao373,
+374,titulo374,decisao374,
+375,titulo375,decisao375,
+376,titulo376,decisao376,
+377,titulo377,decisao377,
+378,titulo378,decisao378,
+379,titulo379,decisao379,
+380,titulo380,decisao380,
+381,titulo381,decisao381,
+382,titulo382,decisao382,
+383,titulo383,decisao383,
+384,titulo384,decisao384,
+385,titulo385,decisao385,
+386,titulo386,decisao386,
+387,titulo387,decisao387,
+388,titulo388,decisao388,
+389,titulo389,decisao389,
+390,titulo390,decisao390,
+391,titulo391,decisao391,
+392,titulo392,decisao392,
+393,titulo393,decisao393,
+394,titulo394,decisao394,
+395,titulo395,decisao395,
+396,titulo396,decisao396,
+397,titulo397,decisao397,
+398,titulo398,decisao398,
+399,titulo399,decisao399,
+400,titulo400,decisao400,
+401,titulo401,decisao401,
+402,titulo402,decisao402,
+403,titulo403,decisao403,
+404,titulo404,decisao404,
+405,titulo405,decisao405,
+406,titulo406,decisao406,
+407,titulo407,decisao407,
+408,titulo408,decisao408,
+409,titulo409,decisao409,
+410,titulo410,decisao410,
+411,titulo411,decisao411,
+412,titulo412,decisao412,
+413,titulo413,decisao413,
+414,titulo414,decisao414,
+415,titulo415,decisao415,
+416,titulo416,decisao416,
+417,titulo417,decisao417,
+418,titulo418,decisao418,
+419,titulo419,decisao419,
+420,titulo420,decisao420,
+421,titulo421,decisao421,
+422,titulo422,decisao422,
+423,titulo423,decisao423,
+424,titulo424,decisao424,
+425,titulo425,decisao425,
+426,titulo426,decisao426,
+427,titulo427,decisao427,
+428,titulo428,decisao428,
+429,titulo429,decisao429,
+430,titulo430,decisao430,
+431,titulo431,decisao431,
+432,titulo432,decisao432,
+433,titulo433,decisao433,
+434,titulo434,decisao434,
+435,titulo435,decisao435,
+436,titulo436,decisao436,
+437,titulo437,decisao437,
+438,titulo438,decisao438,
+439,titulo439,decisao439,
+440,titulo440,decisao440,
+441,titulo441,decisao441,
+442,titulo442,decisao442,
+443,titulo443,decisao443,
+444,titulo444,decisao444,
+445,titulo445,decisao445,
+446,titulo446,decisao446,
+447,titulo447,decisao447,
+448,titulo448,decisao448,
+449,titulo449,decisao449,
+450,titulo450,decisao450,
+451,titulo451,decisao451,
+452,titulo452,decisao452,
+453,titulo453,decisao453,
+454,titulo454,decisao454,
+455,titulo455,decisao455,
+456,titulo456,decisao456,
+457,titulo457,decisao457,
+458,titulo458,decisao458,
+459,titulo459,decisao459,
+460,titulo460,decisao460,
+461,titulo461,decisao461,
+462,titulo462,decisao462,
+463,titulo463,decisao463,
+464,titulo464,decisao464,
+465,titulo465,decisao465,
+466,titulo466,decisao466,
+467,titulo467,decisao467,
+468,titulo468,decisao468,
+469,titulo469,decisao469,
+470,titulo470,decisao470,
+471,titulo471,decisao471,
+472,titulo472,decisao472,
+473,titulo473,decisao473,
+474,titulo474,decisao474,
+475,titulo475,decisao475,
+476,titulo476,decisao476,
+477,titulo477,decisao477,
+478,titulo478,decisao478,
+479,titulo479,decisao479,
+480,titulo480,decisao480,
+481,titulo481,decisao481,
+482,titulo482,decisao482,
+483,titulo483,decisao483,
+484,titulo484,decisao484,
+485,titulo485,decisao485,
+486,titulo486,decisao486,
+487,titulo487,decisao487,
+488,titulo488,decisao488,
+489,titulo489,decisao489,
+490,titulo490,decisao490,
+491,titulo491,decisao491,
+492,titulo492,decisao492,
+493,titulo493,decisao493,
+494,titulo494,decisao494,
+495,titulo495,decisao495,
+496,titulo496,decisao496,
+497,titulo497,decisao497,
+498,titulo498,decisao498,
+499,titulo499,decisao499,
+500,titulo500,decisao500,

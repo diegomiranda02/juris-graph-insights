@@ -74,12 +74,19 @@ title = "Recuperar todas as alíneas associadas a uma decisão judicial específ
 query = "MATCH (dj:DecisaoJudicial {numero: 'decisao 123'})-[:FAZ_REFERENCIA_A]->(al:Alinea) RETURN dj.numero as decisao, al.numero as numero_da_alinea"
 print_query_result(title, query)
 
-# Quais leis que o juiz mais referencia nas suas decisoes?
-title = "Quais leis que o juiz mais referencia nas suas decisoes?"
-query = "MATCH (j:Juiz {nome: 'juiz 3'})-[:PROFERE]->(dj:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(l:Lei) RETURN " 
-columns_renamed = "l.numero as numero_da_lei,j.nome as nome_do_juiz, dj.numero as decisao "
-sort = "ORDER BY l.numero"
-print_query_result(title, query + columns_renamed + sort)
+# Quais leis que o 'juiz 3' mais referencia nas suas decisoes sobre direito ambiental?
+title = "Quais leis que o 'juiz 3' mais referencia nas suas decisoes sobre direito ambiental?"
+query = "MATCH (j:Juiz {nome: 'juiz 3'})-[:PROFERE]->(d:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(l:Lei) "
+query += "MATCH (p:Processo)<-[:PERTENCE_AO_PROCESSO]-(d) " 
+query += "WHERE (p.tipo_de_direito = 'Direito Ambiental') "
+query += "RETURN l.numero "
+query += "ORDER BY l.numero"
+print_query_result(title, query)
+
+ 
+
+
+
 
 
 
