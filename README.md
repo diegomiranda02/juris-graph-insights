@@ -102,11 +102,22 @@ A imagem abaixo mostra um exemplo da representação gráfica dos nós e das are
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/graph_visualization_example.png?raw=true)
 
-## Exemplo Prático: Análise de Precedentes Jurídicos
+## Exemplos Práticos e Implementados em Python
 
-Dessa forma, podemos demonstrar como essa estrutura em grafo facilita a visualização e a análise de dados.
+Suponha que um advogado recebeu um processo na área de Direito Ambiental e que já há um juiz atribuído ao caso. Seria útil para esse advogado traçar o perfil de um juíz identificando quais dispositivos legais esse juíz mais se baseia:
 
-Uma aplicação prática da análise de dados em grafo na área do Direito é a identificação de precedentes jurídicos relevantes. Usando a estrutura de grafo acima, podemos mapear as decisões anteriores e suas conexões com leis, artigos e parágrafos. Com o auxílio das bibliotecas Python "NetworkX" ou "Neo4j", podemos realizar a seguinte análise:
+1 - Quais leis esse juíz se baseia nas suas decições na área ambiental?
+
+Podemos pensar em outra situação prática utilizando análise "What If", ou análise de cenários. Imagine que uma nova lei sobre regulação ambiental está sendo discutida pelo poder legislativo e que vão ser alterados alguns artigos, parágrafos e alíneas e uma determinada lei. Para o advogado, uma pergunta útil seria:
+
+- Quais processo que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
+
+Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
+
+- Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
+
+Ficaremos com esses três exemplos, mas que podem ser expandidos para todo o tipo de Direito e lei: tributário, previdenciário, cível, etc.
+
 
 Encontrar decisões relacionadas a um determinado artigo de lei.
 Identificar os principais advogados envolvidos em casos precedentes.
