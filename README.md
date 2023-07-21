@@ -2,16 +2,16 @@
 
 ## Introdução
 
-A área do Direito recentemente vem utilizando tecnologias e metodologias avançadas para auxiliar advogados, juízes e profissionais da área jurídica a tomarem decisões mais informadas e orientadas a dados. Com o crescente volume de dados disponíveis, a análise de dados em grafo tornou-se uma abordagem poderosa para entender as relações complexas entre processos, decisões, advogados, partes do processo, artigos, leis, parágrafos e alíneas. Neste artigo, exploraremos como o Python pode ser uma ferramenta valiosa para acessar e analisar dados de uma base de dados em grafo e demonstrar o potencial dessa abordagem na área do Direito.
+A área do Direito recentemente vem utilizando tecnologias e metodologias avançadas para auxiliar advogados, juízes e profissionais da área jurídica a tomarem decisões mais informadas e orientadas a dados. Com o crescente volume de dados disponíveis, a análise de dados em grafo tornou-se uma abordagem poderosa para entender as relações complexas entre processos, decisões, advogados, partes do processo, artigos, leis, parágrafos e alíneas. Neste artigo, exploraremos como o Python pode ser uma ferramenta valiosa para acessar e analisar dados de uma base de dados em grafo e demonstrar o potencial dessa abordagem na área do Direito, utilizando como exemplo hipotético um escritório de advocacia fazendo uso dessas análises e aplicando nas tomadas de decisões.
 
-O que são Bancos de Dados em Grafo?
+## O que são Bancos de Dados em Grafo?
 
 Bancos de dados em grafo são estruturas que armazenam e representam dados usando nós e arestas para modelar as relações entre eles. Os nós representam entidades e as arestas representam as conexões ou relações entre essas entidades. Esse modelo é altamente eficiente para representar e acessar dados complexos com muitas interconexões (ORACLE).
 
 
 ## Modelagem de Dados Jurídicos em Grafo
 
-Para demonstrar o potencial da análise de dados em grafo na área do Direito, podemos modelar um conjunto de dados comumente encontrado em escritórios de advocacia, tribunais e órgãos jurídicos. Suponhamos que temos informações sobre processos judiciais, advogados, partes envolvidas, decisões, leis, artigos, parágrafos e alíneas. Vamos estruturar os dados em nós e arestas:
+Para demonstrar o potencial da análise de dados em grafo na área do Direito, podemos modelar um conjunto de dados comumente encontrado em escritórios de advocacia. Suponhamos que temos informações sobre processos judiciais, advogados, partes envolvidas, decisões, leis, artigos, parágrafos e alíneas. Vamos estruturar os dados em nós e arestas:
 
 1. Nós (representam um conjuntos de informações sobre diferentes coisas: como pessoas, objetos ou até mesmo conceitos):
 
@@ -19,7 +19,7 @@ Para demonstrar o potencial da análise de dados em grafo na área do Direito, p
 
     b. Advogados
 
-    c. Juizes
+    c. Juízes
 
     d. Partes
 
@@ -35,7 +35,7 @@ Para demonstrar o potencial da análise de dados em grafo na área do Direito, p
 
 2. Arestas (são as conexões que mostram como os nós estão relacionados entre si). Abaixo uma descrição das conexões e da representação em um banco de dados em grafo:
 
-    a) Relação entre juízes e decisão judiciais
+    a) Relação entre juízes e decisões judiciais
     ```
     (JUIZ)-[PROFERE]->(DECISAO_JUDICIAL)
     ```
@@ -54,6 +54,7 @@ Para demonstrar o potencial da análise de dados em grafo na área do Direito, p
     ```
     (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(PARAGRAFO)
     ```
+
     e) Relação entre decisões judiciais e alíneas
     ```
     (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(ALINEA)
@@ -95,7 +96,11 @@ Para demonstrar o potencial da análise de dados em grafo na área do Direito, p
 
 Os nós são representados entre parênteses () e as arestas são representadas entre colchetes [].
 
-Como o objetivo do artigo é apresentar de forma mais simples e didática o potencial da análise de grafos em um escritório de advocacia, seguiremos com as relações acima descritas, porém há a possibilidade de representar interconexões de diferentes formas. 
+Como o objetivo do artigo é apresentar de forma mais simples e didática o potencial da análise de grafos em um escritório de advocacia, seguiremos com as relações acima descritas, porém há a possibilidade de representar interconexões de diferentes formas.
+
+A imagem abaixo mostra um exemplo da representação gráfica dos nós e arestas em um banco de dados orientado a grafo:
+
+![alt text](https://github.com/diegomiranda02/automaticVizWithStreamlit/blob/main/images/client_table_count_and_percentage.png?raw=true)
 
 ## Exemplo Prático: Análise de Precedentes Jurídicos
 
