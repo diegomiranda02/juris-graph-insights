@@ -98,9 +98,9 @@ Os nós são representados entre parênteses () e as arestas são representadas 
 
 Como o objetivo do artigo é apresentar de forma mais simples e didática o potencial da análise de grafos em um escritório de advocacia, seguiremos com as relações acima descritas, porém há a possibilidade de representar interconexões de diferentes formas.
 
-A imagem abaixo mostra um exemplo da representação gráfica dos nós e arestas em um banco de dados orientado a grafo:
+A imagem abaixo mostra um exemplo da representação gráfica dos nós e das arestas em um banco de dados orientado a grafo:
 
-![alt text](https://https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/graph_visualization_example.png?raw=true)
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/graph_visualization_example.png?raw=true)
 
 ## Exemplo Prático: Análise de Precedentes Jurídicos
 
