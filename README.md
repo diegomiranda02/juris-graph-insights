@@ -35,63 +35,63 @@ Para demonstrar o potencial da análise de dados em grafo na área do Direito, p
 
 2. Arestas (são as conexões que mostram como os nós estão relacionados entre si). Abaixo uma descrição das conexões e da representação em um banco de dados em grafo:
 
-a) Relação entre juízes e decisão judiciais
-```
-(JUIZ)-[PROFERE]->(DECISAO_JUDICIAL)
-```
+    a) Relação entre juízes e decisão judiciais
+    ```
+    (JUIZ)-[PROFERE]->(DECISAO_JUDICIAL)
+    ```
 
-b) Relação entre decisões judiciais e leis
-```
-(DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(LEI)
-```
+    b) Relação entre decisões judiciais e leis
+    ```
+    (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(LEI)
+    ```
 
-c) Relação entre decisões judiciais e artigos
-```
-(DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(ARTIGO)
-```
+    c) Relação entre decisões judiciais e artigos
+    ```
+    (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(ARTIGO)
+    ```
 
-d) Relação entre decisões judiciais e parágrafos
-```
-(DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(PARAGRAFO)
-```
-e) Relação entre decisões judiciais e alíneas
-```
-(DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(ALINEA)
-```
+    d) Relação entre decisões judiciais e parágrafos
+    ```
+    (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(PARAGRAFO)
+    ```
+    e) Relação entre decisões judiciais e alíneas
+    ```
+    (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(ALINEA)
+    ```
 
-f) Relação entre leis e artigos
-```
-(LEI)-[POSSUI_ARTIGO]->(ARTIGO)
-```
+    f) Relação entre leis e artigos
+    ```
+    (LEI)-[POSSUI_ARTIGO]->(ARTIGO)
+    ```
 
-g) Relação entre artigos e parágrafos
-```
-(ARTIGO)-[POSSUI_PARAGRAFO]->(PARAGRAFO)
-```
+    g) Relação entre artigos e parágrafos
+    ```
+    (ARTIGO)-[POSSUI_PARAGRAFO]->(PARAGRAFO)
+    ```
 
-h) Relação entre parágrafos e alíneas
-```
-(PARAGRAFO)-[POSSUI_ALINEA]->(ALINEA)
-```
+    h) Relação entre parágrafos e alíneas
+    ```
+    (PARAGRAFO)-[POSSUI_ALINEA]->(ALINEA)
+    ```
 
-i) Relação entre deciões judiciais e processos
-```
-(DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO)
-```
+    i) Relação entre deciões judiciais e processos
+    ```
+    (DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO)
+    ```
 
-j) Relação entre deciões judiciais e processos
-```
-(DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO)
-```
-l) Relação entre advogados e processos
-```
-(ADVOGADO)-[ENVOLVIDO_EM]->(PROCESSO)
-```
+    j) Relação entre deciões judiciais e processos
+    ```
+    (DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO)
+    ```
+    l) Relação entre advogados e processos
+    ```
+    (ADVOGADO)-[ENVOLVIDO_EM]->(PROCESSO)
+    ```
 
-m) Relação entre partes e processos
-```
-(PARTE)-[ENVOLVIDA_EM]->(PROCESSO)
-```
+    m) Relação entre partes e processos
+    ```
+    (PARTE)-[ENVOLVIDA_EM]->(PROCESSO)
+    ```
 
 Os nós são representados entre parênteses () e as arestas são representadas entre colchetes [].
 
