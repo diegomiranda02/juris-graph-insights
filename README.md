@@ -120,18 +120,43 @@ Também seria possível o escritório analisar quais artigos e leis têm mais im
 
 4. Determinar quais leis e parágrafos têm maior impacto em decisões judiciais.
 
-Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.
-
-
-## Benefícios da Análise de Dados em Grafo no Direito
-
+Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação, será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.
 Identificação Eficiente de Precedentes: A análise de dados em grafo permite uma busca mais rápida e precisa por precedentes relevantes, economizando tempo e recursos.
+
+
+$$$$$$$$$$$$$$$$$$$ MUDAR 
 
 Visualização Intuitiva: A representação gráfica dos dados torna as relações complexas mais compreensíveis, auxiliando na tomada de decisões informadas.
 
 Análise de Cenários: É possível simular diferentes cenários jurídicos, examinando como mudanças em determinadas leis ou conexões afetam outros elementos do sistema jurídico.
 
 Tomada de Decisões Embasada: Advogados e juízes podem usar a análise de dados em grafo para embasar suas argumentações e decisões, com base em informações bem fundamentadas.
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+## Preparação do ambiente de desenvolvimento
+
+1. Instalar Docker: Visite o site oficial (https://docs.docker.com/get-docker/) e siga as instruções para instalar o Docker no seu sistema.
+
+2. Instalar Neo4J com Docker: Visite o site oficial https://neo4j.com/docs/operations-manual/current/docker/introduction/#docker-image e siga as instruções para instalar o servidor de banco de dados em grafo Neo4J com Docker.
+
+3. Instalar Git: Instalar o Git do site oficial (https://git-scm.com/downloads).
+
+4. Clone o projeto do repositório do GitHub:
+
+- Abra um terminal ou prompt de comando
+- Mude o diretório para o qual você clonou o projeto.
+- Execute o seguinte comando para clonar o projeto:
+
+``` 
+git clone https://github.com/diegomiranda02/juris-graph-insights.git
+```
+Uma vez que o download foi finalizado, mude para o diretório do projeto:
+
+```
+cd <project_directory>
+```
+
 
 ## Conclusão
 
