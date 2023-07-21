@@ -100,7 +100,7 @@ Como o objetivo do artigo é apresentar de forma mais simples e didática o pote
 
 A imagem abaixo mostra um exemplo da representação gráfica dos nós e arestas em um banco de dados orientado a grafo:
 
-![alt text](https://github.com/diegomiranda02/automaticVizWithStreamlit/blob/main/images/client_table_count_and_percentage.png?raw=true)
+![alt text](https://https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/graph_visualization_example.png?raw=true)
 
 ## Exemplo Prático: Análise de Precedentes Jurídicos
 
