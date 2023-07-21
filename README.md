@@ -27,7 +27,7 @@ i. Alíneas
 
 2. Arestas (são as conexões que mostram como os nós estão relacionados entre si). Abaixo uma descrição das conexões e da representação em um banco de dados em grafo:
 
-a) Relação entre juízes e decisão judiciais
+a) Relação entre juízes e decisão judiciais: (JUIZ)-[PROFERE]->(DECISAO_JUDICIAL)
 ```
 (JUIZ)-[PROFERE]->(DECISAO_JUDICIAL)
 ```
@@ -85,25 +85,7 @@ m) Relação entre partes e processos
 (PARTE)-[ENVOLVIDA_EM]->(PROCESSO)
 ```
 
-"decisaoJudicial" + str(i), "PERTENCE_AO_PROCESSO", "processo" 
-a) Conexões entre processos e advogados responsáveis pelo processo 
-    Exemplo: 
-b) Vínculos entre processos e partes envolvidas
-```
-JUIZ - PROFERE -> DECISAO_JUDICIAL
-```
-
-
-
-
-
-d) Relação entre juízes e decisões judiciais
-```
-JUIZ - PROFERE -> DECISAO_JUDICIAL
-```
-    
-d) Associação de leis a processos, decisões e artigos
-e) Conexões entre artigos e parágrafos, e parágrafos e alíneas
+Os nós são representados entre parênteses () e as arestas são representadas entre colchetes [].
 
 Como o objetivo do artigo é apresentar de forma mais simples e didática o potencial da análise de grafos em um escritório de advocacia, seguiremos com as relações acima descritas, porém há a possibilidade de representar interconexões de diferentes formas. 
 
