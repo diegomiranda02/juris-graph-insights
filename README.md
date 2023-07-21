@@ -15,23 +15,23 @@ Para demonstrar o potencial da análise de dados em grafo na área do Direito, p
 
 1. Nós (representam um conjuntos de informações sobre diferentes coisas: como pessoas, objetos ou até mesmo conceitos):
 
-a. Processos
+    a. Processos
 
-b. Advogados
+    b. Advogados
 
-c. Juizes
+    c. Juizes
 
-d. Partes
+    d. Partes
 
-e. Decisões Judiciais
+    e. Decisões Judiciais
 
-f. Leis
+    f. Leis
 
-g. Artigos
+    g. Artigos
 
-h. Parágrafos
+    h. Parágrafos
 
-i. Alíneas
+    i. Alíneas
 
 2. Arestas (são as conexões que mostram como os nós estão relacionados entre si). Abaixo uma descrição das conexões e da representação em um banco de dados em grafo:
 
