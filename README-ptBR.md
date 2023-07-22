@@ -8,19 +8,19 @@ A área do Direito recentemente vem utilizando tecnologias e metodologias avanç
 
 ## Exemplos que serão implementados neste artigo, em Python
 
-> 1. Suponha que um advogado recebeu um processo na área de Direito Ambiental e que já há um juiz atribuído ao caso. Seria útil para esse advogado traçar o perfil de um juíz identificando quais dispositivos legais esse juíz mais se baseia:
+1. Suponha que um advogado recebeu um processo na área de Direito Ambiental e que já há um juiz atribuído ao caso. Seria útil para esse advogado traçar o perfil de um juíz identificando quais dispositivos legais esse juíz mais se baseia:
 
 > Quais leis esse juíz se baseia nas suas decições na área ambiental?
 
-> 2. Podemos pensar em outra situação prática utilizando análise "What If", ou análise de cenários. Nesse tipo de análise é possível simular diferentes cenários jurídicos, examinando como mudanças em determinadas leis ou conexões afetam outros elementos do sistema jurídico. Imagine que uma nova lei sobre regulação ambiental está sendo discutida pelo poder legislativo e que vão ser alterados alguns artigos, parágrafos e alíneas em uma determinada lei. Para o advogado, uma pergunta útil seria:
+2. Podemos pensar em outra situação prática utilizando análise "What If", ou análise de cenários. Nesse tipo de análise é possível simular diferentes cenários jurídicos, examinando como mudanças em determinadas leis ou conexões afetam outros elementos do sistema jurídico. Imagine que uma nova lei sobre regulação ambiental está sendo discutida pelo poder legislativo e que vão ser alterados alguns artigos, parágrafos e alíneas em uma determinada lei. Para o advogado, uma pergunta útil seria:
 
 > Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
 
-> 3. Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
+3. Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
 
 > Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
 
-> 4. Também seria possível o escritório analisar quais artigos e leis têm mais impactos nas decisões do processos para orientar seu advogados:
+4. Também seria possível o escritório analisar quais artigos e leis têm mais impactos nas decisões do processos para orientar seu advogados:
 
 > Determinar quais leis e parágrafos têm maior impacto em decisões judiciais.
 
@@ -39,21 +39,13 @@ Para demonstrar o potencial da análise de dados em grafo na área do Direito, p
 1. Nós (representam um conjuntos de informações sobre diferentes coisas: como pessoas, objetos ou até mesmo conceitos):
 
     a. Processos
-
     b. Advogados
-
     c. Juízes
-
     d. Partes
-
     e. Decisões Judiciais
-
     f. Leis
-
     g. Artigos
-
     h. Parágrafos
-
     i. Alíneas
 
 2. Arestas (são as conexões que mostram como os nós estão relacionados entre si). Abaixo uma descrição das conexões e da representação em um banco de dados em grafo:
