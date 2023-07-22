@@ -15,7 +15,6 @@ driver = GraphDatabase.driver(uri, auth=(username, password))
 #############################################
 
 def create_node(node_label, node_type, node_properties):
-    
     #Connect to the database and create a session
     with driver.session() as session:
         session.execute_write(_create_node, node_label, node_type, node_properties)
@@ -156,52 +155,68 @@ load_data("alineas.csv", load_alineas)
 
 # JUIZ -[PROFERE]-> DECISAO
 # Randomly assinging one decision to a judge. It will be usefull to scale the records and test the perfomance with large data.
-for i in range(500):
-    create_relationship("juiz" + str(random.randint(1, 15)), "PROFERE", "decisaoJudicial" + str(i))
+
+def create_relationships_judge_decision():
+    for i in range(500):
+        create_relationship("juiz" + str(random.randint(1, 15)), "PROFERE", "decisaoJudicial" + str(i))
 
 # DECISAO -[FAZ_REFERENCIA_A]-> LEI
 # Randomly assinging one law to a decision. It will be usefull to scale the records and test the perfomance with large data.
-for i in range(500):
-    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_A", "lei" + str(random.randint(1, 10)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
+
+def create_relationships_decision_law():
+    for i in range(500):
+        create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_A", "lei" + str(random.randint(1, 10)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
 
 # DECISAO -[FAZ_REFERENCIA_AO]-> ARTIGO
 # Randomly assinging one article to a decision. It will be usefull to scale the records and test the perfomance with large data.
-for i in range(500):
-    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_AO", "artigo" + str(random.randint(1, 50)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
+
+def create_relationships_decision_article():
+    for i in range(500):
+        create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_AO", "artigo" + str(random.randint(1, 50)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
 
 # DECISAO -[FAZ_REFERENCIA_AO]-> PARAGRAFO
 # Randomly assinging one paragrafo to a decision. It will be usefull to scale the records and test the perfomance with large data.
-for i in range(500):
-    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_AO", "paragrafo" + str(random.randint(1, 250)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
+
+def create_relationships_decision_paragraph():
+    for i in range(500):
+        create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_AO", "paragrafo" + str(random.randint(1, 250)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
 
 # DECISAO -[FAZ_REFERENCIA_A]-> ALINEA
 # Randomly assinging one alinea to a decision. It will be usefull to scale the records and test the perfomance with large data.
-for i in range(500):
-    create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_A", "alinea" + str(random.randint(1, 500)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
+
+def create_relationships_decision_point_of_law():
+    for i in range(500):
+        create_relationship("decisaoJudicial" + str(i), "FAZ_REFERENCIA_A", "alinea" + str(random.randint(1, 500)), relationship_properties={"qtd_referencias": random.randint(1, 5)})
     
 # LEI -[POSSUI_ARTIGO]-> ARTIGO
 # Each law has five articles
-count = 1
-for i in range(1,11):
-    for j in range(5):
-        create_relationship("lei" + str(i), "POSSUI_ARTIGO", "artigo" + str(count))
-        count += 1
+
+def create_relationships_law_article():
+    count = 1
+    for i in range(1,11):
+        for j in range(5):
+            create_relationship("lei" + str(i), "POSSUI_ARTIGO", "artigo" + str(count))
+            count += 1
 
 # ARTIGO -[POSSUI_PARAGRAFO]-> PARAGRAFO
 # Each article has five paragraphs
-count = 1
-for i in range(1,51):
-    for j in range(5):
-        create_relationship("artigo" + str(i), "POSSUI_PARAGRAFO", "paragrafo" + str(count))
-        count += 1
+
+def create_relationships_article_paragraph():
+    count = 1
+    for i in range(1,51):
+        for j in range(5):
+            create_relationship("artigo" + str(i), "POSSUI_PARAGRAFO", "paragrafo" + str(count))
+            count += 1
 
 # PARAGRAFO -[POSSUI_ALINEA]-> ALINEA
 # Each paragraph has two alineas
-count = 1
-for i in range(1,251):
-    for j in range(2):
-        create_relationship("paragrafo" + str(i), "POSSUI_ALINEA", "alinea" + str(count))
-        count += 1
+
+def create_relationships_paragraph_point_of_law():
+    count = 1
+    for i in range(1,251):
+        for j in range(2):
+            create_relationship("paragrafo" + str(i), "POSSUI_ALINEA", "alinea" + str(count))
+            count += 1
 
 # DECISAO_JUDICIAL -[PERTENCE_AO_PROCESSO]-> PROCESSO
 # Each decision is linked with a process
@@ -223,6 +238,7 @@ def create_relationships_lawyer_process():
 
 # PARTE -[ENVOLVIDA_EM]-> PROCESSO
 # Each part are in 10 processes
+
 def create_relationships_part_process():
     processo_count = 1
     for parte_num in range(1, 51):
@@ -232,6 +248,16 @@ def create_relationships_part_process():
             create_relationship(parte,"ENVOLVIDA_EM",processo)
             processo_count += 1
 
+# Creating relationships among nodes
+
+create_relationships_judge_decision()
+create_relationships_decision_law()
+create_relationships_decision_article()
+create_relationships_decision_paragraph()
+create_relationships_decision_point_of_law()
+create_relationships_law_article()
+create_relationships_article_paragraph()
+create_relationships_paragraph_point_of_law()
 create_relationships_lawyer_process()
 create_relationships_part_process()
 

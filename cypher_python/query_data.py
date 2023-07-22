@@ -79,7 +79,7 @@ title = "Quais leis que o 'juiz 3' mais referencia nas suas decisoes sobre direi
 query = "MATCH (j:Juiz {nome: 'juiz 3'})-[:PROFERE]->(d:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(l:Lei) "
 query += "MATCH (p:Processo)<-[:PERTENCE_AO_PROCESSO]-(d) " 
 query += "WHERE (p.tipo_de_direito = 'Direito Ambiental') "
-query += "RETURN l.numero "
+query += "RETURN l.numero as Lei, j.nome as Juíz, p.numero as Processo "
 query += "ORDER BY l.numero"
 print_query_result(title, query)
 
