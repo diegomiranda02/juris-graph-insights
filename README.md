@@ -36,17 +36,16 @@ To demonstrate the potential of graph data analysis in the field of law, we can 
 
 1. Nodes (represent a set of information about different things: like people, objects or even concepts):
 
-####################### MUDAR ISSO ############################3
-    a. Act: Represents the entire legislative Act and serves as the starting node.
-    b. Title: Each title of the Act will be represented as a node of type "Title."
-    c. Subtitle: Each subtitle within a title will be represented as a node of type "Subtitle."
-    d. Chapter: Each chapter within a subtitle will be represented as a node of type "Chapter."
-    e. Section: Each section within a chapter will be represented as a node of type "Section."
-    f. Subsection: If applicable, each subsection within a section will be represented as a node of type "Subsection."
-    g. Judge: Each judge involved in a particular decision can be represented as a node of type "Judge."
-    h. Process: If there are specific legal processes, procedures, or steps associated with a section or subsection, you can represent them as nodes of type "Process."
-    i. Decision: Each legal decision made regarding a section or subsection can be represented as a node of type "Decision."
-    j. Lawyer: Lawyers involved in a specific decision or process can be represented as nodes of type "Lawyer."
+    * Act: Represents the entire legislative Act and serves as the starting node.
+    * Title: Each title of the Act will be represented as a node of type "Title."
+    * Subtitle: Each subtitle within a title will be represented as a node of type "Subtitle."
+    * Chapter: Each chapter within a subtitle will be represented as a node of type "Chapter."
+    * Section: Each section within a chapter will be represented as a node of type "Section."
+    * Subsection: If applicable, each subsection within a section will be represented as a node of type "Subsection."
+    * Judge: Each judge involved in a particular decision can be represented as a node of type "Judge."
+    * Process: If there are specific legal processes, procedures, or steps associated with a section or subsection, you can represent them as nodes of type "Process."
+    * Decision: Each legal decision made regarding a section or subsection can be represented as a node of type "Decision."
+    * Lawyer: Lawyers involved in a specific decision or process can be represented as nodes of type "Lawyer."
 
 2. Edges (these are the connections that show how the nodes are related to each other). Below is a description of the connections and representation in a graph database:
      
