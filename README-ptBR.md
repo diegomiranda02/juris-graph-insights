@@ -6,6 +6,45 @@
 
 A área do Direito recentemente vem utilizando tecnologias e metodologias avançadas para auxiliar advogados, juízes e profissionais da área jurídica a tomarem decisões mais informadas e orientadas a dados. Com o crescente volume de dados disponíveis, a análise de dados em grafo tornou-se uma abordagem poderosa para entender as relações complexas entre processos, decisões, advogados, partes do processo, artigos, leis, parágrafos e alíneas. Neste artigo, exploraremos como o Python pode ser uma ferramenta valiosa para acessar e analisar dados de uma base de dados em grafo e demonstrar o potencial dessa abordagem na área do Direito, utilizando como exemplo hipotético um escritório de advocacia fazendo uso dessas análises e aplicando nas tomadas de decisões.
 
+## Exemplos Práticos e Implementados em Python
+
+Suponha que um advogado recebeu um processo na área de Direito Ambiental e que já há um juiz atribuído ao caso. Seria útil para esse advogado traçar o perfil de um juíz identificando quais dispositivos legais esse juíz mais se baseia:
+
+> 1. Quais leis esse juíz se baseia nas suas decições na área ambiental?
+
+Podemos pensar em outra situação prática utilizando análise "What If", ou análise de cenários. Imagine que uma nova lei sobre regulação ambiental está sendo discutida pelo poder legislativo e que vão ser alterados alguns artigos, parágrafos e alíneas e uma determinada lei. Para o advogado, uma pergunta útil seria:
+
+> 2. Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
+
+Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
+
+> 3. Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
+
+Também seria possível o escritório analisar quais artigos e leis têm mais impactos nas decisões do processos para orientar seu advogados:
+
+> 4. Determinar quais leis e parágrafos têm maior impacto em decisões judiciais.
+
+**Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação, será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.**
+
+
+### Exemplo prático 1
+
+> 1. Quais leis esse juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
+
+Para responder essa pergunta precisamos listar quais interconexões existem no banco. 
+
+$$$$$$$$$$$$$$$$$$$ MUDAR 
+
+Identificação Eficiente de Precedentes: A análise de dados em grafo permite uma busca mais rápida e precisa por precedentes relevantes, economizando tempo e recursos.
+
+Visualização Intuitiva: A representação gráfica dos dados torna as relações complexas mais compreensíveis, auxiliando na tomada de decisões informadas.
+
+Análise de Cenários: É possível simular diferentes cenários jurídicos, examinando como mudanças em determinadas leis ou conexões afetam outros elementos do sistema jurídico.
+
+Tomada de Decisões Embasada: Advogados e juízes podem usar a análise de dados em grafo para embasar suas argumentações e decisões, com base em informações bem fundamentadas.
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$
+
 ## O que são Bancos de Dados em Grafo?
 
 Bancos de dados em grafo são estruturas que armazenam e representam dados usando nós e arestas para modelar as relações entre eles. Os nós representam entidades e as arestas representam as conexões ou relações entre essas entidades. Esse modelo é altamente eficiente para representar e acessar dados complexos com muitas interconexões (ORACLE).
@@ -103,45 +142,6 @@ Como o objetivo do artigo é apresentar de forma mais simples e didática o pote
 A imagem abaixo mostra um exemplo da representação gráfica dos nós e das arestas em um banco de dados orientado a grafo:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/graph_visualization_example.png?raw=true)
-
-## Exemplos Práticos e Implementados em Python
-
-Suponha que um advogado recebeu um processo na área de Direito Ambiental e que já há um juiz atribuído ao caso. Seria útil para esse advogado traçar o perfil de um juíz identificando quais dispositivos legais esse juíz mais se baseia:
-
-> 1. Quais leis esse juíz se baseia nas suas decições na área ambiental?
-
-Podemos pensar em outra situação prática utilizando análise "What If", ou análise de cenários. Imagine que uma nova lei sobre regulação ambiental está sendo discutida pelo poder legislativo e que vão ser alterados alguns artigos, parágrafos e alíneas e uma determinada lei. Para o advogado, uma pergunta útil seria:
-
-> 2. Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
-
-Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
-
-> 3. Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
-
-Também seria possível o escritório analisar quais artigos e leis têm mais impactos nas decisões do processos para orientar seu advogados:
-
-> 4. Determinar quais leis e parágrafos têm maior impacto em decisões judiciais.
-
-**Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação, será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.**
-
-
-### Exemplo prático 1
-
-> 1. Quais leis esse juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
-
-Para responder essa pergunta precisamos listar quais interconexões existem no banco. 
-
-$$$$$$$$$$$$$$$$$$$ MUDAR 
-
-Identificação Eficiente de Precedentes: A análise de dados em grafo permite uma busca mais rápida e precisa por precedentes relevantes, economizando tempo e recursos.
-
-Visualização Intuitiva: A representação gráfica dos dados torna as relações complexas mais compreensíveis, auxiliando na tomada de decisões informadas.
-
-Análise de Cenários: É possível simular diferentes cenários jurídicos, examinando como mudanças em determinadas leis ou conexões afetam outros elementos do sistema jurídico.
-
-Tomada de Decisões Embasada: Advogados e juízes podem usar a análise de dados em grafo para embasar suas argumentações e decisões, com base em informações bem fundamentadas.
-
-$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 ## Preparação do ambiente de desenvolvimento
 
