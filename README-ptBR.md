@@ -10,21 +10,21 @@ A área do Direito recentemente vem utilizando tecnologias e metodologias avanç
 
 1. Suponha que um advogado recebeu um processo na área de Direito Ambiental e que já há um juiz atribuído ao caso. Seria útil para esse advogado traçar o perfil de um juíz identificando quais dispositivos legais esse juíz mais se baseia:
 
-> Quais leis esse juíz se baseia nas suas decições na área ambiental?
+    * Quais leis esse juíz se baseia nas suas decições na área ambiental?
 
 2. Podemos pensar em outra situação prática utilizando análise "What If", ou análise de cenários. Nesse tipo de análise é possível simular diferentes cenários jurídicos, examinando como mudanças em determinadas leis ou conexões afetam outros elementos do sistema jurídico. Imagine que uma nova lei sobre regulação ambiental está sendo discutida pelo poder legislativo e que vão ser alterados alguns artigos, parágrafos e alíneas em uma determinada lei. Para o advogado, uma pergunta útil seria:
 
-> Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
+    * Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
 
 3. Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
 
-> Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
+    * Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
 
-4. Também seria possível o escritório analisar quais artigos e leis têm mais impactos nas decisões do processos para orientar seu advogados:
+4. Também seria possível o escritório analisar quais artigos e leis têm mais impactos nas decisões do processos para orientar seus advogados:
 
-> Determinar quais leis e parágrafos têm maior impacto em decisões judiciais.
+    * Determinar quais leis e parágrafos têm maior impacto em decisões judiciais associadas aos processos do escritório.
 
-**Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação, será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.**
+>> Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação, será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.
 
 
 ## O que são Bancos de Dados em Grafo?
