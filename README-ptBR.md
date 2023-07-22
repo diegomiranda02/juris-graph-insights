@@ -38,76 +38,30 @@ Para demonstrar o potencial da análise de dados em grafo na área do Direito, p
 
 1. Nós (representam um conjuntos de informações sobre diferentes coisas: como pessoas, objetos ou até mesmo conceitos):
 
-    a. Processos
-    b. Advogados
-    c. Juízes
-    d. Partes
-    e. Decisões Judiciais
-    f. Leis
-    g. Artigos
-    h. Parágrafos
-    i. Alíneas
+    * Processos
+    * Advogados
+    * Juízes
+    * Partes
+    * Decisões Judiciais
+    * Leis
+    * Artigos
+    * Parágrafos
+    * Alíneas
 
 2. Arestas (são as conexões que mostram como os nós estão relacionados entre si). Abaixo uma descrição das conexões e da representação em um banco de dados em grafo:
 
-    a) Relação entre juízes e decisões judiciais
-    ```
-    (JUIZ)-[PROFERE]->(DECISAO_JUDICIAL)
-    ```
-
-    b) Relação entre decisões judiciais e leis
-    ```
-    (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(LEI)
-    ```
-
-    c) Relação entre decisões judiciais e artigos
-    ```
-    (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(ARTIGO)
-    ```
-
-    d) Relação entre decisões judiciais e parágrafos
-    ```
-    (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(PARAGRAFO)
-    ```
-
-    e) Relação entre decisões judiciais e alíneas
-    ```
-    (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(ALINEA)
-    ```
-
-    f) Relação entre leis e artigos
-    ```
-    (LEI)-[POSSUI_ARTIGO]->(ARTIGO)
-    ```
-
-    g) Relação entre artigos e parágrafos
-    ```
-    (ARTIGO)-[POSSUI_PARAGRAFO]->(PARAGRAFO)
-    ```
-
-    h) Relação entre parágrafos e alíneas
-    ```
-    (PARAGRAFO)-[POSSUI_ALINEA]->(ALINEA)
-    ```
-
-    i) Relação entre deciões judiciais e processos
-    ```
-    (DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO)
-    ```
-
-    j) Relação entre deciões judiciais e processos
-    ```
-    (DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO)
-    ```
-    l) Relação entre advogados e processos
-    ```
-    (ADVOGADO)-[ENVOLVIDO_EM]->(PROCESSO)
-    ```
-
-    m) Relação entre partes e processos
-    ```
-    (PARTE)-[ENVOLVIDA_EM]->(PROCESSO)
-    ```
+    * (JUIZ)-[PROFERE]->(DECISAO_JUDICIAL): Relação entre juízes e decisões judiciais. Um juíz profere uma decisão judicial.
+    * (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(LEI): Relação entre decisões judiciais e leis. Uma decisão judicial faz referência a uma ou mais leis.
+    * (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(ARTIGO): Relação entre decisões judiciais e artigos. Uma decisão judicial faz referência a um ou mais artigos.
+    * (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(PARAGRAFO): Relação entre decisões judiciais e parágrafos. Uma decisão judicial faz referência a um ou mais parágrafos.
+    * (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(ALINEA): Relação entre decisões judiciais e alíneas. Uma decisão judicial faz referência a uma ou mais alíneas.
+    * (LEI)-[POSSUI_ARTIGO]->(ARTIGO): Relação entre lei e artigos. Uma lei possui vários artigos.
+    * (ARTIGO)-[POSSUI_PARAGRAFO]->(PARAGRAFO): Relação entre artigos e parágrafos. Um artigo possui um ou mais parágrafos.
+    * (PARAGRAFO)-[POSSUI_ALINEA]->(ALINEA): Relação entre parágrafos e alíneas. Um parágrafo tem uma ou várias alíneas.
+    * (DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO): Relação entre decisões judiciais e processos.
+    * (DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO): Relação entre deciões judiciais e processos.
+    * (ADVOGADO)-[ENVOLVIDO_EM]->(PROCESSO): Relação entre advogados e processos.
+    * (PARTE)-[ENVOLVIDA_EM]->(PROCESSO): Relação entre partes e processos.
 
 Os nós são representados entre parênteses () e as arestas são representadas entre colchetes [].
 
