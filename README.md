@@ -106,24 +106,19 @@ A imagem abaixo mostra um exemplo da representação gráfica dos nós e das are
 
 Suponha que um advogado recebeu um processo na área de Direito Ambiental e que já há um juiz atribuído ao caso. Seria útil para esse advogado traçar o perfil de um juíz identificando quais dispositivos legais esse juíz mais se baseia:
 
-1. Quais leis esse juíz se baseia nas suas decições na área ambiental?
+> 1. Quais leis esse juíz se baseia nas suas decições na área ambiental?
 
 Podemos pensar em outra situação prática utilizando análise "What If", ou análise de cenários. Imagine que uma nova lei sobre regulação ambiental está sendo discutida pelo poder legislativo e que vão ser alterados alguns artigos, parágrafos e alíneas e uma determinada lei. Para o advogado, uma pergunta útil seria:
 
-`rgb(9,105,218)`
-    2. Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
-
-    Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
-
-2. Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
+> 2. Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
 
 Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
 
-3. Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
+> 3. Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
 
 Também seria possível o escritório analisar quais artigos e leis têm mais impactos nas decisões do processos para orientar seu advogados:
 
-4. Determinar quais leis e parágrafos têm maior impacto em decisões judiciais.
+> 4. Determinar quais leis e parágrafos têm maior impacto em decisões judiciais.
 
 Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação, será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.
 Identificação Eficiente de Precedentes: A análise de dados em grafo permite uma busca mais rápida e precisa por precedentes relevantes, economizando tempo e recursos.
