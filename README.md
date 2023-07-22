@@ -110,11 +110,11 @@ Suponha que um advogado recebeu um processo na área de Direito Ambiental e que 
 
 Podemos pensar em outra situação prática utilizando análise "What If", ou análise de cenários. Imagine que uma nova lei sobre regulação ambiental está sendo discutida pelo poder legislativo e que vão ser alterados alguns artigos, parágrafos e alíneas e uma determinada lei. Para o advogado, uma pergunta útil seria:
 
-``` `rgb(9,105,218)``
+`rgb(9,105,218)`
     2. Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
 
     Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
-```
+
 2. Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
 
 Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
