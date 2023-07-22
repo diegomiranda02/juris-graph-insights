@@ -49,7 +49,8 @@ Para demonstrar o potencial da análise de dados em grafo na área do Direito, p
     * **Alíneas**
 
 2. Arestas (são as conexões que mostram como os nós estão relacionados entre si). Abaixo uma descrição das conexões e da representação em um banco de dados em grafo:
-    * **Relação entre juízes e decisões judiciais**: Um juíz profere uma decisão judicial: (JUIZ)-[PROFERE]->(DECISAO_JUDICIAL): 
+    * **Relação entre juízes e decisões judiciais** 
+        > Um juíz profere uma decisão judicial: (JUIZ)-[PROFERE]->(DECISAO_JUDICIAL): 
     
     * **(DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(LEI)**: Relação entre decisões judiciais e leis. Uma decisão judicial faz referência a uma ou mais leis.
     * (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(ARTIGO): Relação entre decisões judiciais e artigos. Uma decisão judicial faz referência a um ou mais artigos.
