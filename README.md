@@ -36,9 +36,9 @@ To demonstrate the potential of graph data analysis in the field of law, we can 
 
 1. Nodes (represent a set of information about different things: like people, objects or even concepts):
 
-    * Act: Represents the entire legislative Act and serves as the starting node.
-    * Title: Each title of the Act will be represented as a node of type "Title."
-    * Subtitle: Each subtitle within a title will be represented as a node of type "Subtitle."
+    * **Act**: Represents the entire legislative Act and serves as the starting node.
+    * **Title**: Each title of the Act will be represented as a node of type "Title."
+    * **Subtitle**: Each subtitle within a title will be represented as a node of type "Subtitle."
     * Chapter: Each chapter within a subtitle will be represented as a node of type "Chapter."
     * Section: Each section within a chapter will be represented as a node of type "Section."
     * Subsection: If applicable, each subsection within a section will be represented as a node of type "Subsection."
