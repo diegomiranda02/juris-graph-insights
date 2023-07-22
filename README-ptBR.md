@@ -24,7 +24,7 @@ A área do Direito recentemente vem utilizando tecnologias e metodologias avanç
 
     * Determinar quais leis e parágrafos têm maior impacto em decisões judiciais associadas aos processos do escritório.
 
->> Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação, será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.
+**Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação, será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.**
 
 
 ## O que são Bancos de Dados em Grafo?
@@ -83,7 +83,9 @@ A imagem abaixo mostra um exemplo da representação gráfica dos nós e das are
 
 3. Instalar Git: Instalar o Git do site oficial (https://git-scm.com/downloads).
 
-4. Clone o projeto do repositório do GitHub:
+4. Anaconda: Instalar o softwate Anaconda do site oficial (https://www.anaconda.com/download).
+
+5. Clone o projeto do repositório do GitHub:
 
 - Abra um terminal ou prompt de comando
 - Mude o diretório para o qual você clonou o projeto.
@@ -98,23 +100,46 @@ Uma vez que o download foi finalizado, mude para o diretório do projeto:
 cd <project_directory>
 ```
 
+5. Crie um ambiente para executar o projeto com o seguinte comando:
+
+```bash
+cd <project_directory>
+conda create -f config/environment.yaml
+conda activate neo4j-project
+```
+
+6. Acesso o servidor do banco de dados Neo4J acessando (http://localhost:7474/) para verificar se a instalação está correta.
+
+7. Gerar os dados do banco:
+```python
+python cypher_python/insert_data.py
+```
+
+8. Para deletar os dados do banco execute o seguindo comando:
+```python
+python cypher_python/delete_data.py
+```
+
+9. Para consultar os dados do banco:
+```python
+python cypher_python/query_data.py
+```
+
+
 ### Exemplo prático 1
 
-> 1. Quais leis esse juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
+> 1. Quais leis determinado juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
+
+Para esse exemplo será considerado o 'juiz 3'. Acesse o 
 
 Para responder essa pergunta precisamos listar quais interconexões existem no banco. 
 
-$$$$$$$$$$$$$$$$$$$ MUDAR 
-
-Identificação Eficiente de Precedentes: A análise de dados em grafo permite uma busca mais rápida e precisa por precedentes relevantes, economizando tempo e recursos.
-
-Visualização Intuitiva: A representação gráfica dos dados torna as relações complexas mais compreensíveis, auxiliando na tomada de decisões informadas.
-
-
-
-Tomada de Decisões Embasada: Advogados e juízes podem usar a análise de dados em grafo para embasar suas argumentações e decisões, com base em informações bem fundamentadas.
-
-$$$$$$$$$$$$$$$$$$$$$$$$$$
+```
+    MATCH (j:Juiz {nome: 'juiz 3'})-[:PROFERE]->(d:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(l:Lei) 
+    MATCH (p:Processo)<-[:PERTENCE_AO_PROCESSO]-(d)
+    WHERE (p.tipo_de_direito = 'Direito Ambiental')
+    RETURN l.titulo
+```
 
 ## Conclusão
 
