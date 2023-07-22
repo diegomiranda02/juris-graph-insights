@@ -120,7 +120,8 @@ Também seria possível o escritório analisar quais artigos e leis têm mais im
 
 > 4. Determinar quais leis e parágrafos têm maior impacto em decisões judiciais.
 
-Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação, será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.
+**Ficaremos com esses quatro exemplos para implementar, mas que podem ser expandidos para todo o tipo de Direito: tributário, previdenciário, cível, etc. Após cada implementação, será mostrada a visualização gráfica da rede de conexões para entender as relações entre os nós.**
+
 Identificação Eficiente de Precedentes: A análise de dados em grafo permite uma busca mais rápida e precisa por precedentes relevantes, economizando tempo e recursos.
 
 
