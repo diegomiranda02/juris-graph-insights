@@ -130,7 +130,7 @@ python cypher_python/query_data.py
 
 > 1. Quais leis determinado juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
 
-Para esse exemplo será considerado o 'juiz 3'. Acesse o 
+Para esse exemplo será considerado o 'juiz 3'e os processo na área de Direito Ambiental.
 
 Para responder essa pergunta precisamos listar quais interconexões existem no banco. 
 
@@ -140,6 +140,10 @@ Para responder essa pergunta precisamos listar quais interconexões existem no b
     WHERE (p.tipo_de_direito = 'Direito Ambiental')
     RETURN l.titulo
 ```
+
+Com os dados atuais que constam no banco de dados, as leis que o juiz 3 mais se baseia para suas decisões são as leis 3 e 6. Abaixo a figura representando as conexões:
+
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_que_o_juiz_3_mais_se_baseia.png?raw=true)
 
 ## Conclusão
 
