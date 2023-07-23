@@ -1,5 +1,3 @@
-[English Version](https://github.com/diegomiranda02/juris-graph-insights/blob/main/README.md)
-
 # Análise de Dados em Grafo com Python na Área do Direito
 
 ## Introdução
