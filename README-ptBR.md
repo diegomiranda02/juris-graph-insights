@@ -155,7 +155,7 @@ MATCH (adv:Advogado)-[:ENVOLVIDO_EM]->(p)
 RETURN p.numero as Número, p.titulo as Título, p.tipo_de_direito as Tipo_do_Direito
 ```
 
-![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/processos_impactados_por_mudanca_de_artigo.png?raw=true
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/processos_impactados_por_mudanca_de_artigo.png?raw=true)
 
 ### Exemplo implementado 3
 
@@ -165,7 +165,7 @@ RETURN p.numero as Número, p.titulo as Título, p.tipo_de_direito as Tipo_do_Di
 MATCH (p:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(lei:Lei {numero: 8}) 
 RETURN p,lei,dj
 ```
-![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/lei_alterada_que_pode_impactar_processos.png?raw=true
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/lei_alterada_que_pode_impactar_processos.png?raw=true)
 
 ### Exemplo implementado 4
 
@@ -193,7 +193,7 @@ ORDER BY ImpactoDecisoes DESC
 
 
 
-![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_e_paragrafos_que_tem_maior_impacto_em_decisoes_judiciais.png?raw=true
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_e_paragrafos_que_tem_maior_impacto_em_decisoes_judiciais.png?raw=true)
 
 ## Conclusão
 
