@@ -83,6 +83,7 @@ query += "RETURN l.numero as Lei, j.nome as Juíz, p.numero as Processo "
 query += "ORDER BY l.numero"
 print_query_result(title, query)
 
+
  
 
 

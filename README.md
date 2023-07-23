@@ -87,6 +87,24 @@ A imagem abaixo mostra um exemplo da representação gráfica dos nós e das are
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/graph_visualization_example.png?raw=true)
 
+__
+
+## Dados utilizados neste artigo
+
+O projeto foi desenvolvido com o objetivo de facilitar a geração rápida de dados fictícios para testes e demonstrações. Por isso, os dados referentes a advogados, alíneas, artigos, decisões, juízes, leis, parágrafos, partes e processos foram criados de forma sequencial e fictícia. Essa abordagem permite que o sistema seja rapidamente populado com informações  para verificar o funcionamento e realizar testes de desempenho.
+
+No entanto, é importante destacar que essa estrutura de dados é flexível e pode ser facilmente adaptada para representar dados reais. Basta modificar os campos e atributos das entidades para refletir as informações reais que serão inseridas. Por exemplo, para substituir os dados fictícios por dados reais, basta substituir os nomes e informações nos arquivos .csv por nomes e informações reais de advogados, juízes, leis, partes, processos, etc.
+
+Os arquivos que contêm os dados estão organizados na pasta "data" do sistema. 
+
+Na pasta "cypher_python", há três scripts em Python que facilitam a manipulação dos dados:
+
+"insert_data.py": Este script é responsável por inserir os dados nas entidades do banco de dados em grafo. Ao ser executado, ele utiliza os dados sequenciais predefinidos para popular o banco de dados.
+
+"delete_data.py": O segundo script é responsável por apagar todos os dados existentes no banco de dados em grafo. Isso permite reiniciar o sistema com dados limpos para novos testes ou inserção de dados reais.
+
+"query_data.py": Por fim, o terceiro script é utilizado para realizar consultas nos dados. Ele permite recuperar informações específicas sobre as entidades do banco de dados, possibilitando a verificação dos resultados gerados.
+__
 
 ## Preparação do ambiente de desenvolvimento
 
@@ -122,20 +140,31 @@ conda activate neo4j-project
 
 6. Acesso o servidor do banco de dados Neo4J acessando http://localhost:7474/ para verificar se a instalação está correta.
 
-7. Gerar os dados do banco:
+7. Modificar a senha do banco no seguinte trecho dos scripts 'insert_data.py', 'delete_data.py' e 'query_data.py'
+
+```
+username = MUDAR_LOGIN  # Substitua pelo seu nome de usuário Neo4j
+password = MUDAR_SENHA  # Substitua pela sua senha do Neo4j
+```
+
+8. Gerar os dados do banco:
+
 ```python
 python cypher_python/insert_data.py
 ```
 
-8. Para deletar os dados do banco execute o seguindo comando:
+9. Para deletar os dados do banco execute o seguindo comando:
+
 ```python
 python cypher_python/delete_data.py
 ```
 
-9. Para consultar os dados do banco:
+10. Para consultar os dados do banco:
+
 ```python
 python cypher_python/query_data.py
 ```
+__
 
 ## Implementações dos exemplos
 
