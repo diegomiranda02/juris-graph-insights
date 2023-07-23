@@ -4,7 +4,7 @@
 
 A área do Direito recentemente vem utilizando tecnologias e metodologias avançadas para auxiliar advogados, juízes e profissionais da área jurídica a tomarem decisões mais informadas e orientadas a dados. Com o crescente volume de dados disponíveis, a análise de dados em grafo tornou-se uma ferramenta importante para entender as relações complexas entre processos, decisões, advogados, partes do processo, artigos, leis, parágrafos e alíneas.
 
-Ao incorporar juízes, processos, decisões e advogados no modelo de banco de dados gráfico, torna-se possível capturar as relações entre elementos legislativos e entidades legais envolvidas na interpretação, aplicação e representação da lei. Esse modelo estendido permite a navegação não apenas na hierarquia legislativa, mas também nos vários atores jurídicos e suas ações relacionadas a artigos, parágrafos ou alíneas específicas da lei. 
+Ao incorporar juízes, processos, decisões e advogados no modelo de banco de dados orientado a grafo, torna-se possível capturar as relações entre elementos legislativos e entidades legais envolvidas na interpretação, aplicação e representação da lei. Esse modelo estendido permite a navegação não apenas na hierarquia legislativa, mas também nos vários atores jurídicos e suas ações relacionadas a artigos, parágrafos ou alíneas específicas da lei. 
 
  Neste artigo, exploraremos como o Python pode ser uma ferramenta valiosa para acessar e analisar dados de uma base de dados em grafo e demonstrar o potencial dessa abordagem na área do Direito, utilizando como exemplo hipotético um escritório de advocacia fazendo uso dessas análises e aplicando nas tomadas de decisões.
 
@@ -20,13 +20,13 @@ Vamos explorar quatro exemplos práticos de como essa análise pode ser aplicada
 
     Imagine que uma nova lei sobre regulação ambiental está em discussão no poder legislativo, e algumas alterações serão feitas nos artigos, parágrafos e alíneas de uma lei já existente. Neste cenário, o advogado pode utilizar a análise de grafos para responder perguntas como: "Quais processos que estou responsável poderão ser impactados com a alteração da lei ambiental atual?". Através da simulação de cenários, o advogado pode antecipar possíveis desdobramentos jurídicos e preparar-se para tais mudanças.
 
-* **Impactos da alteração da lei no escritório de advocacia:**
+* **Impactos da alteração da lei nos processos de um escritório de advocacia::**
 
     Em uma perspectiva de escritório de advocacia, é importante entender como a alteração da lei ambiental pode afetar os processos em andamento. Com a análise de grafos, o escritório pode mapear os processos que estão sendo conduzidos e identificar quais deles poderão ter impactos com a mudança na legislação ambiental. Isso permitirá que o escritório tome medidas preventivas ou de ajuste em casos específicos.
 
 * **Identificação das leis e parágrafos mais relevantes:**
 
-    Outra aplicação da análise de grafos é a determinação de quais leis e parágrafos têm maior impacto nas decisões judiciais associadas aos processos do escritório. Identificando essas leis e parágrafos mais relevantes, o escritório pode orientar seus advogados de forma mais efetiva, priorizando o estudo e a compreensão desses elementos chave do sistema jurídico.
+    Outra aplicação da análise de grafos é a determinação de quais leis e parágrafos têm maior impacto nas decisões judiciais associadas aos processos do escritório. Identificando essas leis e parágrafos mais relevantes, o escritório pode orientar seus advogados de forma mais efetiva, priorizando o estudo e a compreensão desses elementos.
 
 
 Em todas as implementações, será apresentada a visualização gráfica da rede de conexões. A visualização das conexões permitirá que os advogados e o escritório de advocacia visualizem as redes de conexões entre as leis, decisões judiciais, dispositivos legais, e demais elementos relevantes. Essa visualização auxiliará na compreensão das relações entre os nós, possibilitando uma análise mais aprofundada e estratégica dos casos.
@@ -89,7 +89,7 @@ __
 
 ## Dados utilizados neste artigo
 
-O projeto foi desenvolvido com o objetivo de facilitar a geração rápida de dados fictícios para testes e demonstrações. Por isso, os dados referentes a advogados, alíneas, artigos, decisões, juízes, leis, parágrafos, partes e processos foram criados de forma sequencial e fictícia. Essa abordagem permite que o sistema seja rapidamente populado com informações  para verificar o funcionamento e realizar testes de desempenho.
+O projeto foi desenvolvido com o objetivo de facilitar a geração rápida de dados fictícios para testes e demonstrações. Por isso, os dados referentes a advogados, alíneas, artigos, decisões, juízes, leis, parágrafos, partes e processos foram criados de forma sequencial e aleatória. Essa abordagem permite que o sistema seja rapidamente populado com informações  para verificar o funcionamento e realizar testes de desempenho.
 
 No entanto, é importante destacar que essa estrutura de dados é flexível e pode ser facilmente adaptada para representar dados reais. Basta modificar os campos e atributos das entidades para refletir as informações reais que serão inseridas. Por exemplo, para substituir os dados fictícios por dados reais, basta substituir os nomes e informações nos arquivos .csv por nomes e informações reais de advogados, juízes, leis, partes, processos, etc.
 
@@ -129,35 +129,35 @@ Uma vez que o download foi finalizado, mude para o diretório do projeto:
 cd <diretorio_do_projeto>
 ```
 
-5. Crie um ambiente para executar o projeto com o seguinte comando:
+6. Crie um ambiente para executar o projeto com o seguinte comando:
 
 ```bash
 conda create -f config/environment.yaml
 conda activate neo4j-project
 ```
 
-6. Acesso o servidor do banco de dados Neo4J acessando http://localhost:7474/ para verificar se a instalação está correta.
+7. Acesso o servidor do banco de dados Neo4J acessando http://localhost:7474/ para verificar se a instalação está correta.
 
-7. Modificar a senha do banco no seguinte trecho dos scripts 'insert_data.py', 'delete_data.py' e 'query_data.py'
+8. Modificar a senha do banco no seguinte trecho dos scripts 'insert_data.py', 'delete_data.py' e 'query_data.py'
 
 ```
 username = MUDAR_LOGIN  # Substitua pelo seu nome de usuário Neo4j
 password = MUDAR_SENHA  # Substitua pela sua senha do Neo4j
 ```
 
-8. Gerar os dados do banco:
+9. Gerar os dados do banco:
 
 ```python
 python cypher_python/insert_data.py
 ```
 
-9. Para deletar os dados do banco execute o seguindo comando:
+10. Para deletar os dados do banco execute o seguindo comando:
 
 ```python
 python cypher_python/delete_data.py
 ```
 
-10. Para consultar os dados do banco:
+11. Para consultar os dados do banco:
 
 ```python
 python cypher_python/query_data.py
