@@ -30,9 +30,8 @@ Vamos explorar quatro exemplos práticos de como essa análise pode ser aplicada
 
     Outra aplicação da análise de grafos é a determinação de quais leis e parágrafos têm maior impacto nas decisões judiciais associadas aos processos do escritório. Identificando essas leis e parágrafos mais relevantes, o escritório pode orientar seus advogados de forma mais efetiva, priorizando o estudo e a compreensão desses elementos chave do sistema jurídico.
 
-* **Visualização gráfica da rede de conexões:**
 
-    Em todas as implementações, a análise de grafos permitirá que os advogados e o escritório de advocacia visualizem as redes de conexões entre as leis, decisões judiciais, dispositivos legais, e demais elementos relevantes. Essa visualização auxiliará na compreensão das relações entre os nós, possibilitando uma análise mais aprofundada e estratégica dos casos.
+Em todas as implementações, será apresentada a visualização gráfica da rede de conexões. A visualização das conexões permitirá que os advogados e o escritório de advocacia visualizem as redes de conexões entre as leis, decisões judiciais, dispositivos legais, e demais elementos relevantes. Essa visualização auxiliará na compreensão das relações entre os nós, possibilitando uma análise mais aprofundada e estratégica dos casos.
 
 
 ## O que são Bancos de Dados em Grafo?
@@ -57,22 +56,28 @@ Para demonstrar o potencial da análise de dados em grafo na área do Direito, p
     * **Alíneas**
 
 2. Arestas (são as conexões que mostram como os nós estão relacionados entre si). Abaixo uma descrição das conexões e da representação em um banco de dados em grafo:
-    * **Relação entre juízes e decisões judiciais** 
-        ```
-        Um juíz profere uma decisão judicial: (JUIZ)-[PROFERE]->(DECISAO_JUDICIAL): 
-        ```
-    
-    * **(DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(LEI)**: Relação entre decisões judiciais e leis. Uma decisão judicial faz referência a uma ou mais leis.
-    * (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(ARTIGO): Relação entre decisões judiciais e artigos. Uma decisão judicial faz referência a um ou mais artigos.
-    * (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(PARAGRAFO): Relação entre decisões judiciais e parágrafos. Uma decisão judicial faz referência a um ou mais parágrafos.
-    * (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(ALINEA): Relação entre decisões judiciais e alíneas. Uma decisão judicial faz referência a uma ou mais alíneas.
-    * (LEI)-[POSSUI_ARTIGO]->(ARTIGO): Relação entre lei e artigos. Uma lei possui vários artigos.
-    * (ARTIGO)-[POSSUI_PARAGRAFO]->(PARAGRAFO): Relação entre artigos e parágrafos. Um artigo possui um ou mais parágrafos.
-    * (PARAGRAFO)-[POSSUI_ALINEA]->(ALINEA): Relação entre parágrafos e alíneas. Um parágrafo tem uma ou várias alíneas.
-    * (DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO): Relação entre decisões judiciais e processos.
-    * (DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO): Relação entre deciões judiciais e processos.
-    * (ADVOGADO)-[ENVOLVIDO_EM]->(PROCESSO): Relação entre advogados e processos.
-    * (PARTE)-[ENVOLVIDA_EM]->(PROCESSO): Relação entre partes e processos.
+
+    * **Relação entre juízes e decisões judiciais:** (JUIZ)-[PROFERE]->(DECISAO_JUDICIAL) - Um juiz profere uma decisão judicial.
+
+    * **Relação entre decisões judiciais e leis:** (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(LEI) - Uma decisão judicial faz referência a uma ou mais leis.
+
+    * **Relação entre decisões judiciais e artigos:** (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(ARTIGO) - Uma decisão judicial faz referência a um ou mais artigos.
+
+    * **Relação entre decisões judiciais e parágrafos:** (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_AO]->(PARAGRAFO) - Uma decisão judicial faz referência a um ou mais parágrafos.
+
+    * **Relação entre decisões judiciais e alíneas:** (DECISAO_JUDICIAL)-[FAZ_REFERENCIA_A]->(ALINEA) - Uma decisão judicial faz referência a uma ou mais alíneas.
+
+    * **Relação entre lei e artigos:** (LEI)-[POSSUI_ARTIGO]->(ARTIGO) - Uma lei possui vários artigos.
+
+    * **Relação entre artigos e parágrafos:** (ARTIGO)-[POSSUI_PARAGRAFO]->(PARAGRAFO) - Um artigo possui um ou mais parágrafos.
+
+    * **Relação entre parágrafos e alíneas:** (PARAGRAFO)-[POSSUI_ALINEA]->(ALINEA) - Um parágrafo tem uma ou várias alíneas.
+
+    * **Relação entre decisões judiciais e processos:** (DECISAO_JUDICIAL)-[PERTENCE_AO_PROCESSO]->(PROCESSO) - Uma decisão judicial pertence a um processo.
+
+    * **Relação entre advogados e processos:** (ADVOGADO)-[ENVOLVIDO_EM]->(PROCESSO) - Um advogado está envolvido em um processo.
+
+    * **Relação entre partes e processos:** (PARTE)-[ENVOLVIDA_EM]->(PROCESSO) - Uma parte está envolvida em um processo.
 
 Os nós são representados entre parênteses () e as arestas são representadas entre colchetes [].
 
