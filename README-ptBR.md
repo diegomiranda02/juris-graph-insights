@@ -4,7 +4,11 @@
 
 ## Introdução
 
-A área do Direito recentemente vem utilizando tecnologias e metodologias avançadas para auxiliar advogados, juízes e profissionais da área jurídica a tomarem decisões mais informadas e orientadas a dados. Com o crescente volume de dados disponíveis, a análise de dados em grafo tornou-se uma abordagem poderosa para entender as relações complexas entre processos, decisões, advogados, partes do processo, artigos, leis, parágrafos e alíneas. Neste artigo, exploraremos como o Python pode ser uma ferramenta valiosa para acessar e analisar dados de uma base de dados em grafo e demonstrar o potencial dessa abordagem na área do Direito, utilizando como exemplo hipotético um escritório de advocacia fazendo uso dessas análises e aplicando nas tomadas de decisões.
+A área do Direito recentemente vem utilizando tecnologias e metodologias avançadas para auxiliar advogados, juízes e profissionais da área jurídica a tomarem decisões mais informadas e orientadas a dados. Com o crescente volume de dados disponíveis, a análise de dados em grafo tornou-se uma ferramenta importante para entender as relações complexas entre processos, decisões, advogados, partes do processo, artigos, leis, parágrafos e alíneas.
+
+Ao incorporar juízes, processos, decisões e advogados no modelo de banco de dados gráfico, torna-se possível capturar as relações entre elementos legislativos e entidades legais envolvidas na interpretação, aplicação e representação da lei. Esse modelo estendido permite a navegação não apenas na hierarquia legislativa, mas também nos vários atores jurídicos e suas ações relacionadas a artigos, parágrafos ou alíneas específicas da lei. 
+
+ Neste artigo, exploraremos como o Python pode ser uma ferramenta valiosa para acessar e analisar dados de uma base de dados em grafo e demonstrar o potencial dessa abordagem na área do Direito, utilizando como exemplo hipotético um escritório de advocacia fazendo uso dessas análises e aplicando nas tomadas de decisões.
 
 ## Exemplos que serão implementados neste artigo, em Python
 
@@ -24,11 +28,11 @@ Vamos explorar quatro exemplos práticos de como essa análise pode ser aplicada
 
 * **Identificação das leis e parágrafos mais relevantes:**
 
-    > Outra aplicação da análise de grafos é a determinação de quais leis e parágrafos têm maior impacto nas decisões judiciais associadas aos processos do escritório. Identificando essas leis e parágrafos mais relevantes, o escritório pode orientar seus advogados de forma mais efetiva, priorizando o estudo e a compreensão desses elementos chave do sistema jurídico.
+    Outra aplicação da análise de grafos é a determinação de quais leis e parágrafos têm maior impacto nas decisões judiciais associadas aos processos do escritório. Identificando essas leis e parágrafos mais relevantes, o escritório pode orientar seus advogados de forma mais efetiva, priorizando o estudo e a compreensão desses elementos chave do sistema jurídico.
 
 * **Visualização gráfica da rede de conexões:**
 
-    > Em todas as implementações, a análise de grafos permitirá que os advogados e o escritório de advocacia visualizem as redes de conexões entre as leis, decisões judiciais, dispositivos legais, e demais elementos relevantes. Essa visualização auxiliará na compreensão das relações entre os nós, possibilitando uma análise mais aprofundada e estratégica dos casos.
+    Em todas as implementações, a análise de grafos permitirá que os advogados e o escritório de advocacia visualizem as redes de conexões entre as leis, decisões judiciais, dispositivos legais, e demais elementos relevantes. Essa visualização auxiliará na compreensão das relações entre os nós, possibilitando uma análise mais aprofundada e estratégica dos casos.
 
 
 ## O que são Bancos de Dados em Grafo?
