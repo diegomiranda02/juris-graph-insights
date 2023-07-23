@@ -139,7 +139,7 @@ python cypher_python/query_data.py
 
 ## Implementações dos exemplos
 
-### Quais leis determinado juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
+### Exemplo 1: Quais leis determinado juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
 
 Para esse exemplo será considerado o 'juiz 3'e os processo na área de Direito Ambiental. 
 
@@ -165,7 +165,7 @@ Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_que_o_juiz_3_mais_se_baseia.png?raw=true)
 
-### Quais processos que determinado advogado está responsável poderão ter impactos com a alteração da lei ambiental atual?
+### Exemplo 2: Quais processos que determinado advogado está responsável poderão ter impactos com a alteração da lei ambiental atual?
 
 Para esse exemplo será considerado o 'artigo 40' e os processo na área de Direito Ambiental. 
 
@@ -187,7 +187,7 @@ Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/processos_impactados_por_mudanca_de_artigo.png?raw=true)
 
-### Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
+### Exemplo 3: Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
 
 Para esse exemplo será considerada a lei de número 8 e os processo na área de Direito Ambiental. 
 
@@ -206,7 +206,7 @@ Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/lei_alterada_que_pode_impactar_processos.png?raw=true)
 
-### Determinar quais leis e parágrafos têm maior impacto em decisões judiciais associadas aos processos do escritório.
+### Exemplo 4: Determinar quais leis e parágrafos têm maior impacto em decisões judiciais associadas aos processos do escritório.
 
 ```cypher
 MATCH (pr:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)
