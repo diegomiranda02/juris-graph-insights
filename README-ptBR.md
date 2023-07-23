@@ -10,19 +10,24 @@ A área do Direito recentemente vem utilizando tecnologias e metodologias avanç
 
 Vamos explorar quatro exemplos práticos de como essa análise pode ser aplicada na área de Direito Ambiental, mas vale destacar que os mesmos conceitos podem ser expandidos para outras áreas do Direito, como tributário, previdenciário, cível, entre outras.
 
-**Perfil do Juiz e suas bases legais:**
+* **Perfil do Juiz e suas bases legais:**
+
 Suponha que um advogado recebeu um processo na área de Direito Ambiental e quer traçar o perfil do juiz responsável pelo caso. Com a análise de grafos, podemos identificar quais dispositivos legais esse juiz mais se baseia em suas decisões na área ambiental. O advogado pode analisar as decisões anteriores do juiz, identificando as leis, artigos e jurisprudências mais frequentemente citados nas sentenças.
 
-**Análise "What If" - Simulação de cenários:**
+* **Análise "What If" - Simulação de cenários:**
+
 Imagine que uma nova lei sobre regulação ambiental está em discussão no poder legislativo, e algumas alterações serão feitas nos artigos, parágrafos e alíneas de uma lei já existente. Neste cenário, o advogado pode utilizar a análise de grafos para responder perguntas como: "Quais processos que estou responsável poderão ser impactados com a alteração da lei ambiental atual?". Através da simulação de cenários, o advogado pode antecipar possíveis desdobramentos jurídicos e preparar-se para tais mudanças.
 
-**Impactos da alteração da lei no escritório de advocacia:**
+* **Impactos da alteração da lei no escritório de advocacia:**
+
 Em uma perspectiva de escritório de advocacia, é importante entender como a alteração da lei ambiental pode afetar os processos em andamento. Com a análise de grafos, o escritório pode mapear os processos que estão sendo conduzidos e identificar quais deles poderão ter impactos com a mudança na legislação ambiental. Isso permitirá que o escritório tome medidas preventivas ou de ajuste em casos específicos.
 
-**Identificação das leis e parágrafos mais relevantes:**
+* **Identificação das leis e parágrafos mais relevantes:**
+
 Outra aplicação da análise de grafos é a determinação de quais leis e parágrafos têm maior impacto nas decisões judiciais associadas aos processos do escritório. Identificando essas leis e parágrafos mais relevantes, o escritório pode orientar seus advogados de forma mais efetiva, priorizando o estudo e a compreensão desses elementos chave do sistema jurídico.
 
-**Visualização gráfica da rede de conexões:**
+* **Visualização gráfica da rede de conexões:**
+
 Em todas as implementações, a análise de grafos permitirá que os advogados e o escritório de advocacia visualizem as redes de conexões entre as leis, decisões judiciais, dispositivos legais, e demais elementos relevantes. Essa visualização auxiliará na compreensão das relações entre os nós, possibilitando uma análise mais aprofundada e estratégica dos casos.
 
 
