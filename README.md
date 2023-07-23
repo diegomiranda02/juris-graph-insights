@@ -165,6 +165,8 @@ Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_que_o_juiz_3_mais_se_baseia.png?raw=true)
 
+___
+
 ### Exemplo 2: Quais processos que determinado advogado está responsável poderão ter impactos com a alteração da lei ambiental atual?
 
 Para esse exemplo será considerado o 'artigo 40' e os processo na área de Direito Ambiental. 
@@ -187,6 +189,8 @@ Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/processos_impactados_por_mudanca_de_artigo.png?raw=true)
 
+___
+
 ### Exemplo 3: Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
 
 Para esse exemplo será considerada a lei de número 8 e os processo na área de Direito Ambiental. 
@@ -205,6 +209,8 @@ Esta consulta em linguagem Cypher busca recuperar os Processos do tipo "Direito 
 Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/lei_alterada_que_pode_impactar_processos.png?raw=true)
+
+___
 
 ### Exemplo 4: Determinar quais leis e parágrafos têm maior impacto em decisões judiciais associadas aos processos do escritório.
 
@@ -261,6 +267,8 @@ Esta consulta em linguagem Cypher busca determinar o impacto das Leis, Artigos e
 Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_e_paragrafos_que_tem_maior_impacto_em_decisoes_judiciais.png?raw=true)
+
+___
 
 ## Conclusão
 
