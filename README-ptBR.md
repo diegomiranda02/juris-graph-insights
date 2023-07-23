@@ -96,7 +96,7 @@ A imagem abaixo mostra um exemplo da representação gráfica dos nós e das are
 
 3. Instalar Git: Instalar o Git do site oficial (https://git-scm.com/downloads).
 
-4. Anaconda: Instalar o softwate Anaconda do site oficial (https://www.anaconda.com/download).
+4. Anaconda: Instalar o software Anaconda do site oficial (https://www.anaconda.com/download).
 
 5. Clone o projeto do repositório do GitHub:
 
@@ -110,18 +110,17 @@ git clone https://github.com/diegomiranda02/juris-graph-insights.git
 Uma vez que o download foi finalizado, mude para o diretório do projeto:
 
 ```
-cd <project_directory>
+cd <diretorio_do_projeto>
 ```
 
 5. Crie um ambiente para executar o projeto com o seguinte comando:
 
 ```bash
-cd <project_directory>
 conda create -f config/environment.yaml
 conda activate neo4j-project
 ```
 
-6. Acesso o servidor do banco de dados Neo4J acessando (http://localhost:7474/) para verificar se a instalação está correta.
+6. Acesso o servidor do banco de dados Neo4J acessando http://localhost:7474/ para verificar se a instalação está correta.
 
 7. Gerar os dados do banco:
 ```python
@@ -138,14 +137,11 @@ python cypher_python/delete_data.py
 python cypher_python/query_data.py
 ```
 
+## Implementações dos exemplos
 
-### Exemplo implementado 1
+### Quais leis determinado juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
 
-1. Quais leis determinado juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
-
-Para esse exemplo será considerado o 'juiz 3'e os processo na área de Direito Ambiental.
-
-Para responder essa pergunta precisamos listar quais interconexões existem no banco. 
+Para esse exemplo será considerado o 'juiz 3'e os processo na área de Direito Ambiental. 
 
 ```cypher
     MATCH (j:Juiz {nome: 'juiz 3'})-[:PROFERE]->(d:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(l:Lei) 
@@ -169,9 +165,9 @@ Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_que_o_juiz_3_mais_se_baseia.png?raw=true)
 
-### Exemplo implementado 2
+### Quais processos que determinado advogado está responsável poderão ter impactos com a alteração da lei ambiental atual?
 
-2. Quais processos que determinado advogado está responsável poderão ter impactos com a alteração da lei ambiental atual?
+Para esse exemplo será considerado o 'artigo 40' e os processo na área de Direito Ambiental. 
 
 ```cypher
 MATCH (p:Processo {tipo_de_direito: "Direito Ambiental"})<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)-[:FAZ_REFERENCIA_AO]->(art:Artigo {numero: "artigo 40"}) 
@@ -191,18 +187,18 @@ Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/processos_impactados_por_mudanca_de_artigo.png?raw=true)
 
-### Exemplo implementado 3
+### Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
 
-3. Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
+Para esse exemplo será considerada a lei de número 8 e os processo na área de Direito Ambiental. 
 
 ```cypher
-MATCH (p:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(lei:Lei {numero: 8}) 
+MATCH (p:Processo {tipo_de_direito: "Direito Ambiental"})<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(lei:Lei {numero: 8}) 
 RETURN p,lei,dj
 ```
 
-Esta consulta em linguagem Cypher busca as informações sobre os processos e decisões judiciais associadas a uma Lei específica de número 8.
+Esta consulta em linguagem Cypher busca recuperar os Processos do tipo "Direito Ambiental" que têm Decisões Judiciais associadas a uma Lei específica de número 8.
 
-1. MATCH (p:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(lei:Lei {numero: 8}): Realiza uma correspondência para encontrar os nós que representam os Processos (identificados pela variável 'p') e suas Decisões Judiciais associadas (identificadas pela variável 'dj') que estão relacionadas à Lei específica de número 8 (identificada pela variável 'lei').
+1. MATCH (p:Processo {tipo_de_direito: "Direito Ambiental"})<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(lei:Lei {numero: 8}): Realiza uma correspondência para encontrar os nós que representam os Processos (identificados pela variável 'p') do tipo "Direito Ambiental" e suas Decisões Judiciais associadas (identificadas pela variável 'dj'), que por sua vez estão relacionadas a uma Lei específica de número 8 (identificada pela variável 'lei').
 
 2. RETURN p, lei, dj: Retorna os nós dos Processos ('p'), da Lei específica ('lei') e das Decisões Judiciais ('dj') que foram encontrados na correspondência anterior da consulta.
 
@@ -210,9 +206,7 @@ Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/lei_alterada_que_pode_impactar_processos.png?raw=true)
 
-### Exemplo implementado 4
-
-4. Determinar quais leis e parágrafos têm maior impacto em decisões judiciais associadas aos processos do escritório.
+### Determinar quais leis e parágrafos têm maior impacto em decisões judiciais associadas aos processos do escritório.
 
 ```cypher
 MATCH (pr:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)
@@ -223,19 +217,20 @@ MATCH (art)-[:POSSUI_PARAGRAFO]->(p)
 RETURN l, art, p, dj
 ```
 
-Esta consulta em linguagem Cypher busca as informações sobre as decisões judiciais associadas aos processos, as leis e parágrafos referenciados por essas decisões judiciais e os artigos associados a esses parágrafos.
+Esta consulta em linguagem Cypher busca recuperar informações relacionadas às Leis, Artigos, Parágrafos e Decisões Judiciais que estão interconectados em um grafo de dados.
 
-1. MATCH (pr:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial): Realiza uma correspondência para encontrar os nós que representam os processos (identificados pela variável 'pr') e suas decisões judiciais associadas (identificadas pela variável 'dj'). O relacionamento "<-[:PERTENCE_AO_PROCESSO]" liga as decisões judiciais aos processos.
+1. MATCH (pr:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial): Realiza uma correspondência para encontrar os nós que representam os Processos (identificados pela variável 'pr') e suas Decisões Judiciais associadas (identificadas pela variável 'dj'). O relacionamento "<-[:PERTENCE_AO_PROCESSO]" liga as Decisões Judiciais aos Processos.
 
-2. MATCH (dj)-[:FAZ_REFERENCIA_A]->(l:Lei): Realiza outra correspondência para encontrar os nós que representam as leis (identificadas pela variável 'l') referenciadas pelas decisões judiciais (mantidas com a variável 'dj'). O relacionamento "[:FAZ_REFERENCIA_A]" liga as decisões judiciais às leis.
+2. MATCH (dj)-[:FAZ_REFERENCIA_A]->(l:Lei): Continuando a correspondência anterior, encontra as Leis (identificadas pela variável 'l') que são referenciadas pelas Decisões Judiciais (mantidas com a variável 'dj'). O relacionamento "[:FAZ_REFERENCIA_A]" liga as Decisões Judiciais às Leis.
 
-3. MATCH (dj)-[:FAZ_REFERENCIA_AO]->(p:Paragrafo): Realiza mais uma correspondência para encontrar os nós que representam os parágrafos (identificados pela variável 'p') referenciados pelas decisões judiciais (mantidas com a variável 'dj'). O relacionamento "[:FAZ_REFERENCIA_AO]" liga as decisões judiciais aos parágrafos.
+3. MATCH (dj)-[:FAZ_REFERENCIA_AO]->(p:Paragrafo): Continuando a correspondência anterior, encontra os Parágrafos (identificados pela variável 'p') que são referenciados pelas Decisões Judiciais (mantidas com a variável 'dj'). O relacionamento "[:FAZ_REFERENCIA_AO]" liga as Decisões Judiciais aos Parágrafos.
 
-4. MATCH (l)-[:POSSUI_ARTIGO]->(art:Artigo): Realiza outra correspondência para encontrar os nós que representam os artigos (identificados pela variável 'art') associados às leis (mantidas com a variável 'l'). O relacionamento "[:POSSUI_ARTIGO]" liga as leis aos artigos.
+4. MATCH (l)-[:POSSUI_ARTIGO]->(art:Artigo): Continuando a correspondência, encontra os Artigos (identificados pela variável 'art') associados às Leis (mantidas com a variável 'l'). O relacionamento "[:POSSUI_ARTIGO]" liga as Leis aos Artigos.
 
-5. MATCH (art)-[:POSSUI_PARAGRAFO]->(p): Realiza mais uma correspondência para encontrar os nós que representam os parágrafos (identificados pela variável 'p') associados aos artigos (mantidos com a variável 'art'). O relacionamento "[:POSSUI_PARAGRAFO]" liga os artigos aos parágrafos.
+5. MATCH (art)-[:POSSUI_PARAGRAFO]->(p): Continuando a correspondência, encontra os Parágrafos (identificados pela variável 'p') associados aos Artigos (mantidos com a variável 'art'). O relacionamento "[:POSSUI_PARAGRAFO]" liga os Artigos aos Parágrafos.
 
-6. RETURN l, art, p, dj: Retorna os nós da Lei ('l'), Artigo ('art'), Parágrafo ('p') e Decisão Judicial ('dj') que foram encontrados nas correspondências anteriores da consulta.
+6. RETURN l, art, p, dj: Retorna os nós das Leis ('l'), dos Artigos ('art'), dos Parágrafos ('p') e das Decisões Judiciais ('dj') que foram encontrados nas correspondências anteriores da consulta.
+
 
 ```cypher
 MATCH (pr:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)
@@ -247,21 +242,21 @@ RETURN l.numero, art.numero, p.numero, COUNT(DISTINCT dj) AS ImpactoDecisoes
 ORDER BY ImpactoDecisoes DESC
 ```
 
-Esta consulta em linguagem Cypher busca determinar o impacto de leis, artigos e parágrafos nas decisões judiciais associadas aos processos, porém com o intuito de saber a quantidade de descisões que serão impactadas pela mudança da lei ou parágrafo.
+Esta consulta em linguagem Cypher busca determinar o impacto das Leis, Artigos e Parágrafos nas Decisões Judiciais associadas aos Processos em um banco de dados em grafo.
 
-1. MATCH (pr:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial): Realiza uma correspondência para encontrar os nós que representam os processos (identificados pela variável 'pr') e suas decisões judiciais associadas (identificadas pela variável 'dj'). O relacionamento "<-[:PERTENCE_AO_PROCESSO]" liga as decisões judiciais aos processos.
+1. MATCH (pr:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial): Realiza uma correspondência para encontrar os nós que representam os Processos (identificados pela variável 'pr') e suas Decisões Judiciais associadas (identificadas pela variável 'dj'). O relacionamento "<-[:PERTENCE_AO_PROCESSO]" liga as Decisões Judiciais aos Processos.
 
-2. MATCH (dj)-[:FAZ_REFERENCIA_A]->(l:Lei): Continuando a correspondência anterior, encontra as leis (identificadas pela variável 'l') referenciadas pelas decisões judiciais (mantidas com a variável 'dj'). O relacionamento "[:FAZ_REFERENCIA_A]" liga as decisões judiciais às leis.
+2. MATCH (dj)-[:FAZ_REFERENCIA_A]->(l:Lei): Continuando a correspondência, encontra as Leis (identificadas pela variável 'l') referenciadas pelas Decisões Judiciais (mantidas com a variável 'dj'). O relacionamento "[:FAZ_REFERENCIA_A]" liga as Decisões Judiciais às Leis.
 
-3. MATCH (dj)-[:FAZ_REFERENCIA_AO]->(p:Paragrafo): Continuando a correspondência anterior, encontra os parágrafos (identificados pela variável 'p') referenciados pelas decisões judiciais (mantidas com a variável 'dj'). O relacionamento "[:FAZ_REFERENCIA_AO]" liga as decisões judiciais aos parágrafos.
+3. MATCH (dj)-[:FAZ_REFERENCIA_AO]->(p:Paragrafo): Continuando a correspondência, encontra os Parágrafos (identificados pela variável 'p') referenciados pelas Decisões Judiciais (mantidas com a variável 'dj'). O relacionamento "[:FAZ_REFERENCIA_AO]" liga as Decisões Judiciais aos Parágrafos.
 
-4. MATCH (l)-[:POSSUI_ARTIGO]->(art:Artigo): Continuando a correspondência, encontra os artigos (identificados pela variável 'art') associados às leis (mantidas com a variável 'l'). O relacionamento "[:POSSUI_ARTIGO]" liga as leis aos artigos.
+4. MATCH (l)-[:POSSUI_ARTIGO]->(art:Artigo): Continuando a correspondência, encontra os Artigos (identificados pela variável 'art') associados às Leis (mantidas com a variável 'l'). O relacionamento "[:POSSUI_ARTIGO]" liga as Leis aos Artigos.
 
-5. MATCH (art)-[:POSSUI_PARAGRAFO]->(p): Continuando a correspondência, encontra os parágrafos (identificados pela variável 'p') associados aos artigos (mantidos com a variável 'art'). O relacionamento "[:POSSUI_PARAGRAFO]" liga os artigos aos parágrafos.
+5. MATCH (art)-[:POSSUI_PARAGRAFO]->(p): Continuando a correspondência, encontra os Parágrafos (identificados pela variável 'p') associados aos Artigos (mantidos com a variável 'art'). O relacionamento "[:POSSUI_PARAGRAFO]" liga os Artigos aos Parágrafos.
 
-6. RETURN l.numero, art.numero, p.numero, COUNT(DISTINCT dj) AS ImpactoDecisoes: Retorna os números das Leis ('l.numero'), Artigos ('art.numero') e Parágrafos ('p.numero') que foram encontrados nas correspondências anteriores da consulta. Além disso, a consulta calcula o número de decisões judiciais distintas associadas a cada combinação de Lei, Artigo e Parágrafo e o renomeia como 'ImpactoDecisoes'.
+6. RETURN l.numero, art.numero, p.numero, COUNT(DISTINCT dj) AS ImpactoDecisoes: Retorna os números das Leis ('l.numero'), dos Artigos ('art.numero'), dos Parágrafos ('p.numero') e calcula o número de Decisões Judiciais distintas associadas a cada combinação de Lei, Artigo e Parágrafo. O resultado é renomeado como 'ImpactoDecisoes'.
 
-7. ORDER BY ImpactoDecisoes DESC: Ordena os resultados em ordem decrescente de acordo com o impacto das leis, artigos e parágrafos nas decisões judiciais, para que possamos identificar quais deles têm maior impacto nas decisões judiciais associadas aos processos.
+7. ORDER BY ImpactoDecisoes DESC: Ordena os resultados em ordem decrescente de acordo com o impacto das Leis, Artigos e Parágrafos nas Decisões Judiciais, permitindo identificar quais têm maior impacto nas Decisões Judiciais associadas aos Processos.
 
 Abaixo a figura representando as conexões:
 
