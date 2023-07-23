@@ -8,24 +8,22 @@ A área do Direito recentemente vem utilizando tecnologias e metodologias avanç
 
 ## Exemplos que serão implementados neste artigo, em Python
 
-A análise de grafos com Python na área do Direito pode ser uma ferramenta poderosa para advogados e escritórios de advocacia. Vamos explorar quatro exemplos práticos de como essa análise pode ser aplicada na área de Direito Ambiental, mas vale destacar que os mesmos conceitos podem ser expandidos para outras áreas do Direito, como tributário, previdenciário, cível, entre outras.
+Vamos explorar quatro exemplos práticos de como essa análise pode ser aplicada na área de Direito Ambiental, mas vale destacar que os mesmos conceitos podem ser expandidos para outras áreas do Direito, como tributário, previdenciário, cível, entre outras.
 
-Perfil do Juiz e suas bases legais:
+**Perfil do Juiz e suas bases legais:**
 Suponha que um advogado recebeu um processo na área de Direito Ambiental e quer traçar o perfil do juiz responsável pelo caso. Com a análise de grafos, podemos identificar quais dispositivos legais esse juiz mais se baseia em suas decisões na área ambiental. O advogado pode analisar as decisões anteriores do juiz, identificando as leis, artigos e jurisprudências mais frequentemente citados nas sentenças.
 
-Análise "What If" - Simulação de cenários:
+**Análise "What If" - Simulação de cenários:**
 Imagine que uma nova lei sobre regulação ambiental está em discussão no poder legislativo, e algumas alterações serão feitas nos artigos, parágrafos e alíneas de uma lei já existente. Neste cenário, o advogado pode utilizar a análise de grafos para responder perguntas como: "Quais processos que estou responsável poderão ser impactados com a alteração da lei ambiental atual?". Através da simulação de cenários, o advogado pode antecipar possíveis desdobramentos jurídicos e preparar-se para tais mudanças.
 
-Impactos da alteração da lei no escritório de advocacia:
+**Impactos da alteração da lei no escritório de advocacia:**
 Em uma perspectiva de escritório de advocacia, é importante entender como a alteração da lei ambiental pode afetar os processos em andamento. Com a análise de grafos, o escritório pode mapear os processos que estão sendo conduzidos e identificar quais deles poderão ter impactos com a mudança na legislação ambiental. Isso permitirá que o escritório tome medidas preventivas ou de ajuste em casos específicos.
 
-Identificação das leis e parágrafos mais relevantes:
+**Identificação das leis e parágrafos mais relevantes:**
 Outra aplicação da análise de grafos é a determinação de quais leis e parágrafos têm maior impacto nas decisões judiciais associadas aos processos do escritório. Identificando essas leis e parágrafos mais relevantes, o escritório pode orientar seus advogados de forma mais efetiva, priorizando o estudo e a compreensão desses elementos chave do sistema jurídico.
 
-Visualização gráfica da rede de conexões:
+**Visualização gráfica da rede de conexões:**
 Em todas as implementações, a análise de grafos permitirá que os advogados e o escritório de advocacia visualizem as redes de conexões entre as leis, decisões judiciais, dispositivos legais, e demais elementos relevantes. Essa visualização auxiliará na compreensão das relações entre os nós, possibilitando uma análise mais aprofundada e estratégica dos casos.
-
-Com o uso adequado da análise de grafos, advogados e escritórios de advocacia podem ganhar insights valiosos, tomar decisões mais informadas e estar melhor preparados para enfrentar os desafios da prática jurídica na área do Direito Ambiental, ou em qualquer outra área do Direito em que esse tipo de análise seja aplicável.
 
 
 ## O que são Bancos de Dados em Grafo?
@@ -257,7 +255,7 @@ Abaixo a figura representando as conexões:
 
 ## Conclusão
 
-A análise de dados em grafo utilizando Python em conjunto com bancos de dados em grafo, como o "Neo4j", oferece um vasto potencial na área do Direito. A capacidade de modelar e visualizar relações complexas entre processos, decisões, advogados, partes, leis, artigos, parágrafos e alíneas permite uma análise mais profunda e informada, possibilitando a identificação de precedentes jurídicos relevantes e auxiliando na tomada de decisões. Com o contínuo avanço da tecnologia e a crescente quantidade de dados disponíveis, a análise de dados em grafo certamente desempenhará um papel fundamental no futuro do Direito.
+A análise de dados em grafo utilizando Python em conjunto com bancos de dados em grafo, como o "Neo4j", oferece um vasto potencial na área do Direito. A capacidade de modelar e visualizar relações complexas entre processos, decisões, advogados, partes, leis, artigos, parágrafos e alíneas permite uma análise mais profunda e informada, possibilitando a identificação de precedentes jurídicos relevantes e auxiliando na tomada de decisões. Com o uso adequado da análise de grafos, advogados e escritórios de advocacia podem ganhar insights valiosos, tomar decisões mais informadas e estar melhor preparados para enfrentar os desafios da prática jurídica na área do Direito. Com o contínuo avanço da tecnologia e a crescente quantidade de dados disponíveis, a análise de dados em grafo certamente desempenhará um papel fundamental no futuro do Direito.
 
 ## Referências
 
