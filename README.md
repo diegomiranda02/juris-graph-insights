@@ -20,7 +20,7 @@ Vamos explorar quatro exemplos práticos de como essa análise pode ser aplicada
 
     Imagine que uma nova lei sobre regulação ambiental está em discussão no poder legislativo, e algumas alterações serão feitas nos artigos, parágrafos e alíneas de uma lei já existente. Neste cenário, o advogado pode utilizar a análise de grafos para responder perguntas como: "Quais processos que estou responsável poderão ser impactados com a alteração da lei ambiental atual?". Através da simulação de cenários, o advogado pode antecipar possíveis desdobramentos jurídicos e preparar-se para tais mudanças.
 
-* **Impactos da alteração da lei nos processos de um escritório de advocacia::**
+* **Impactos da alteração da lei nos processos de um escritório de advocacia:**
 
     Em uma perspectiva de escritório de advocacia, é importante entender como a alteração da lei ambiental pode afetar os processos em andamento. Com a análise de grafos, o escritório pode mapear os processos que estão sendo conduzidos e identificar quais deles poderão ter impactos com a mudança na legislação ambiental. Isso permitirá que o escritório tome medidas preventivas ou de ajuste em casos específicos.
 
