@@ -14,7 +14,7 @@ A área do Direito recentemente vem utilizando tecnologias e metodologias avanç
 
 2. Podemos pensar em outra situação prática utilizando análise "What If", ou análise de cenários. Nesse tipo de análise é possível simular diferentes cenários jurídicos, examinando como mudanças em determinadas leis ou conexões afetam outros elementos do sistema jurídico. Imagine que uma nova lei sobre regulação ambiental está sendo discutida pelo poder legislativo e que vão ser alterados alguns artigos, parágrafos e alíneas em uma determinada lei. Para o advogado, uma pergunta útil seria:
 
-    * Quais processos que estou responsável poderão ter impactos com a alteração da lei ambiental atual?
+    * Quais processos que determinado advogado está responsável poderão ter impactos com a alteração da lei ambiental atual?
 
 3. Ou em caso do escritório de advocacia, uma pergunta importante a ser respondida seria:
 
@@ -126,15 +126,15 @@ python cypher_python/query_data.py
 ```
 
 
-### Exemplo prático 1
+### Exemplo implementado 1
 
-> 1. Quais leis determinado juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
+1. Quais leis determinado juíz se baseia nas suas decisões dos processos na área do Direito Ambiental?
 
 Para esse exemplo será considerado o 'juiz 3'e os processo na área de Direito Ambiental.
 
 Para responder essa pergunta precisamos listar quais interconexões existem no banco. 
 
-```
+```cypher
     MATCH (j:Juiz {nome: 'juiz 3'})-[:PROFERE]->(d:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(l:Lei) 
     MATCH (p:Processo)<-[:PERTENCE_AO_PROCESSO]-(d)
     WHERE (p.tipo_de_direito = 'Direito Ambiental')
@@ -144,6 +144,56 @@ Para responder essa pergunta precisamos listar quais interconexões existem no b
 Com os dados atuais que constam no banco de dados, as leis que o juiz 3 mais se baseia para suas decisões são as leis 3 e 6. Abaixo a figura representando as conexões:
 
 ![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_que_o_juiz_3_mais_se_baseia.png?raw=true)
+
+### Exemplo implementado 2
+
+2. Quais processos que determinado advogado está responsável poderão ter impactos com a alteração da lei ambiental atual?
+
+```cypher
+MATCH (p:Processo {tipo_de_direito: "Direito Ambiental"})<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)-[:FAZ_REFERENCIA_AO]->(art:Artigo {numero: "artigo 40"}) 
+MATCH (adv:Advogado)-[:ENVOLVIDO_EM]->(p)
+RETURN p.numero as Número, p.titulo as Título, p.tipo_de_direito as Tipo_do_Direito
+```
+
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/processos_impactados_por_mudanca_de_artigo.png?raw=true
+
+### Exemplo implementado 3
+
+3. Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
+
+```cypher
+MATCH (p:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(lei:Lei {numero: 8}) 
+RETURN p,lei,dj
+```
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/lei_alterada_que_pode_impactar_processos.png?raw=true
+
+### Exemplo implementado 4
+
+4. Determinar quais leis e parágrafos têm maior impacto em decisões judiciais associadas aos processos do escritório.
+
+```cypher
+MATCH (pr:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)
+MATCH (dj)-[:FAZ_REFERENCIA_A]->(l:Lei)
+MATCH (dj)-[:FAZ_REFERENCIA_AO]->(p:Paragrafo)
+RETURN l, pr, dj, p
+```
+
+Caso o intuito seja saber quantas leis e paragrafos terão impacto nas decisões
+
+```cypher
+MATCH (pr:Processo)<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)
+MATCH (dj)-[:FAZ_REFERENCIA_A]->(l:Lei)
+MATCH (dj)-[:FAZ_REFERENCIA_AO]->(p:Paragrafo)
+MATCH (l)-[:POSSUI_ARTIGO]->(art:Artigo)
+MATCH (art)-[:POSSUI_PARAGRAFO]->(p)
+RETURN l.numero, art.numero, p.numero, COUNT(DISTINCT dj) AS ImpactoDecisoes
+ORDER BY ImpactoDecisoes DESC
+```
+
+
+
+
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_e_paragrafos_que_tem_maior_impacto_em_decisoes_judiciais.png?raw=true
 
 ## Conclusão
 
