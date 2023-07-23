@@ -194,7 +194,7 @@ Abaixo a figura representando as conexões:
 
 ___
 
-### Exemplo 2: Quais processos que determinado advogado está responsável poderão ter impactos com a alteração da lei ambiental atual?
+### Exemplo 2: Qual é o impacto potencial da alteração da lei ambiental atual nos processos em que um advogado específico está atuando como responsável?
 
 Para esse exemplo será considerado o 'artigo 40' e os processo na área de Direito Ambiental. 
 
@@ -218,9 +218,9 @@ Abaixo a figura representando as conexões:
 
 ___
 
-### Exemplo 3: Quais processos que estão sendo conduzidos aqui no escritório poderão ter impactos com a alteração da lei ambiental atual?
+### Exemplo 3: Quais processos que estão sendo conduzidos no escritório poderão ter impactos com a alteração da lei ambiental atual?
 
-Para esse exemplo será considerada a lei de número 8 e os processo na área de Direito Ambiental. 
+Para esse exemplo será considerada a lei de número 8 e os processos na área de Direito Ambiental. 
 
 ```cypher
 MATCH (p:Processo {tipo_de_direito: "Direito Ambiental"})<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(lei:Lei {numero: 8}) 
