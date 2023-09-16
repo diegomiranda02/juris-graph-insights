@@ -95,9 +95,9 @@ O projeto foi desenvolvido com o objetivo de facilitar a geração rápida de da
 
 No entanto, é importante destacar que essa estrutura de dados é flexível e pode ser facilmente adaptada para representar dados reais. Basta modificar os campos e atributos das entidades para refletir as informações reais que serão inseridas. Por exemplo, para substituir os dados fictícios por dados reais, basta substituir os nomes e informações nos arquivos .csv por nomes e informações reais de advogados, juízes, leis, partes, processos, etc.
 
-Os arquivos que contêm os dados estão organizados na pasta "data" do sistema. 
+Os arquivos que contêm os dados estão organizados na pasta "data/pt_BR/" do sistema. 
 
-Na pasta "cypher_python", há três scripts em Python que facilitam a manipulação dos dados:
+Na pasta "cypher_python/pt_BR/", há três scripts em Python que facilitam a manipulação dos dados:
 
 "insert_data.py": Este script é responsável por inserir os dados nas entidades do banco de dados em grafo. Ao ser executado, ele utiliza os dados sequenciais predefinidos para popular o banco de dados.
 
@@ -150,19 +150,19 @@ password = MUDAR_SENHA  # Substitua pela sua senha do Neo4j
 9. Gerar os dados do banco:
 
 ```python
-python cypher_python/insert_data.py
+python cypher_python/pt_BR/insert_data.py
 ```
 
 10. Para deletar os dados do banco execute o seguindo comando:
 
 ```python
-python cypher_python/delete_data.py
+python cypher_python/pt_BR/delete_data.py
 ```
 
 11. Para consultar os dados do banco:
 
 ```python
-python cypher_python/query_data.py
+python cypher_python/pt_BR/query_data.py
 ```
 __
 
