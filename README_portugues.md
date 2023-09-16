@@ -110,7 +110,7 @@ __
 
 1. Instalar Docker: Visite o site oficial (https://docs.docker.com/get-docker/) e siga as instruções para instalar o Docker no seu sistema.
 
-2. Instalar Neo4J com Docker: Visite o site oficial https://neo4j.com/docs/operations-manual/current/docker/introduction/#docker-image e siga as instruções para instalar o servidor de banco de dados em grafo Neo4J com Docker.
+2. Instalar Neo4J com Docker: Visite o site oficial (https://neo4j.com/docs/operations-manual/current/docker/introduction/#docker-image) e siga as instruções para instalar o servidor de banco de dados em grafo Neo4J com Docker.
 
 3. Instalar Git: Instalar o Git do site oficial (https://git-scm.com/downloads).
 

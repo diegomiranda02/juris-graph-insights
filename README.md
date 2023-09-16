@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The legal field has been incorporating advanced technologies and methodologies to aid lawyers, judges, and legal professionals in making informed and data-driven decisions. With the growing amount of data available, graph data analysis has become a crucial tool for comprehending the intricate relationships between cases, decisions, judges, attorneys, involved parties, acts, titles, chapters, sections, and subsections.
+The legal field has been incorporating advanced technologies and methodologies to aid lawyers, judges, and legal professionals in making informed and data-driven decisions. With the growing amount of data available, graph data analysis has become a crucial tool for comprehending the intricate relationships between cases, decisions, judges, attorneys, involved parties, acts, chapters, sections, and subsections.
 
 By including judges, cases, decisions, and attorneys in the graph database model, it becomes feasible to depict the connections among legislative components and legal entities involved in interpreting, applying, and representing the law. This enhanced model allows for navigation not only within the legislative hierarchy but also among different legal actors and their activities related to specific sections and subsections of the act.
 
@@ -16,11 +16,11 @@ We can examine four useful instances of how this analysis can apply to Environme
 
 * **Judge Profile and Their Legal Foundation:**
 
-    Imagine a scenario where an attorney receives a case related to Environmental Law and wishes to understand the judge assigned to the case. By utilizing graph analysis, we can determine which legal provisions the judge frequently references in their environmental decisions. This enables the lawyer to review the judge's past decisions and identify the most commonly cited sections and subsections in their decisions.
+    Imagine a scenario where an attorney receives a case related to Environmental Law and wishes to understand the judge assigned to the case. By utilizing graph analysis, we can determine which legal provisions the judge frequently references in their environmental decisions. This enables the attorney to review the judge's past decisions and identify the most commonly cited sections and subsections in their decisions.
 
 * **"What If" Analysis - Scenario Simulation:**
 
-    Imagine being a lawyer who is presented with a new environmental regulation law under discussion in the legislative branch. This proposed law will modify the current law by altering its chapters, sections, and subsections. Utilizing graph analysis, the lawyer can address significant inquiries such as, "What will be the impact of the changes to the existing environmental law on the cases I am handling?" Through simulating various scenarios, the lawyer can predict possible legal outcomes and be equipped for any adjustments that may occur.
+    Imagine being a attorney who is presented with a new environmental regulation law under discussion in the legislative branch. This proposed law will modify the current law by altering its chapters, sections, and subsections. Utilizing graph analysis, the attorney can address significant inquiries such as, "What will be the impact of the changes to the existing environmental law on the cases I am handling?" Through simulating various scenarios, the attorney can predict possible legal outcomes and be equipped for any adjustments that may occur.
 
 * **Impacts of the Amendment to the Law on a Law Firm's Cases:**
 
@@ -28,7 +28,7 @@ We can examine four useful instances of how this analysis can apply to Environme
 
 * **Identification of the most relevant sections and subsections:**
 
-    Another application of graph analysis is determining which sections and subsections have the greatest impact on the judicial decisions associated with the law firm's cases. By identifying these most relevant sections and subsections, the firm can guide its lawyers more effectively, prioritizing the study and understanding of these elements.
+    Another application of graph analysis is determining which sections and subsections have the greatest impact on the judicial decisions associated with the law firm's cases. By identifying these most relevant sections and subsections, the firm can guide its attorneys more effectively, prioritizing the study and understanding of these elements.
 
 
 In all implementations, a graphical visualization of the network of connections will be presented. The visualization of connections will allow the attorneys and the law firm to see the networks of connections between acts, judicial decisions, legal provisions, and other relevant elements. This visualization will aid in understanding the relationships between nodes, enabling a more in-depth and strategic analysis of the cases.
@@ -49,7 +49,7 @@ To demonstrate the potential of graph data analysis in the field of Law, we can 
     * **Attorneys**
     * **Judges**
     * **Parties**
-    * **Judiciail Decisions**
+    * **Judicial Decisions**
     * **Acts**
     * **Chapters**
     * **Sections**
@@ -57,13 +57,11 @@ To demonstrate the potential of graph data analysis in the field of Law, we can 
 
 2. Edges (are the connections that show how the nodes are related to each other). Below is a description of the connections and their representation in a graph database:
 
-    * **Relationship between Judges and Judicial Decisions:** (JUDGE)-[MAKES]->(JUDICIAL_DECISION)- This relationship indicates that a judge (or judges) is responsible for making judicial decisions. Each "JUDICIAL_DECISION" node represents a specific decision made by a judge.
+    * **Relationship between Judges and Judicial Decisions:** (JUDGE)-[MAKES]->(JUDICIAL_DECISION)- This relationship indicates that a judge (or judges) is responsible for making judicial decisions.
 
-    * **Relationship between Judicial Decisions and Cases:** (CASE)-[INVOLVES]->(JUDICIAL_DECISION)- This relationship indicates that a judicial decision is associated with a specific legal case.
+    * **Relationship between Judicial Decisions and Cases:** (JUDICIAL_DECISION)-[BELONGS_TO_CASE]->(CASE)- This relationship indicates that a judicial decision is associated with a specific legal case.
 
     * **Relationship between Attorneys and Cases:** (ATTORNEY)-[REPRESENTS]->(CASE)- This relationship connects the attorneys to the case they are handling.
-
-    * **Relationship between Judges and Cases:** (JUDGE)-[PRESIDES_OVER]->(CASE)- This relationship represents that a judge presides over or is assigned to a particular case.
 
     * **Relationship between Parties and Cases:** (PARTY)-[INVOLVED_IN]->(CASE)- This relationship shows that a party (e.g., plaintiff, defendant) is involved in a specific case. It connects the parties to the cases in which they are participants.
 
@@ -100,13 +98,13 @@ __
 
 ## Development Environment Setup
 
-1. Install Docker: Visit the official website and follow the instructions to install Docker on your system.
+1. Install Docker: Visit the official website (https://docs.docker.com/get-docker/) and follow the instructions to install Docker on your system.
 
-2. Install Neo4J with Docker: Visit the official website and follow the instructions to install the Neo4J graph database server with Docker.
+2. Install Neo4J with Docker: Visit the official website (https://neo4j.com/docs/operations-manual/current/docker/introduction/#docker-image) and follow the instructions to install the Neo4J graph database server with Docker.
 
-3. Install Git: Install Git from the official website.
+3. Install Git: Install Git from the official website (https://git-scm.com/downloads).
 
-4. Anaconda: Install the Anaconda software from the official website.
+4. Anaconda: Install the Anaconda software from the official website (https://www.anaconda.com/download).
 
 5. Clone the project from the GitHub repository:
 
@@ -214,7 +212,7 @@ ___
 
 ### Example 3: Which cases being handled in the law firm may be impacted by the current Environmental Act amendment?
 
-For this example, Act Number 8 and the cases in the field of environmental law will be considered.
+For this example, Act Number 1 and the cases in the field of environmental law will be considered.
 
 ```cypher
 MATCH (c:Case {area_of_law: "Environmental Law"})<-[:BELONGS_TO_CASE]-(jd:JudicialDecision)-[:REFERENCES]->(act:Act {act_number: 'act 1'})
@@ -281,7 +279,7 @@ ___
 
 ## Conclusion
 
-Graph data analysis using Python in conjunction with graph databases like "Neo4j" offers vast potential in the field of Law. The ability to model and visualize complex relationships between cases, decisions, lawyers, parties, laws, articles, paragraphs, and clauses allows for a deeper and more informed analysis, enabling the identification of relevant legal precedents and assisting in decision-making. With the proper use of graph analysis, lawyers and law firms can gain valuable insights, make more informed decisions, and be better prepared to tackle the challenges of legal practice in the field of Law. With the ongoing advancement of technology and the increasing amount of available data, graph data analysis will undoubtedly play a pivotal role in the future of Law.
+Graph data analysis using Python in conjunction with graph databases like "Neo4j" offers vast potential in the field of Law. The ability to model and visualize complex relationships between cases, decisions, attorneys, parties, acts, chapters, sections, and subsections allows for a deeper and more informed analysis, enabling the identification of relevant legal precedents and assisting in decision-making. With the proper use of graph analysis, attorneys and law firms can gain valuable insights, make more informed decisions, and be better prepared to tackle the challenges of legal practice in the field of Law. With the ongoing advancement of technology and the increasing amount of available data, graph data analysis will undoubtedly play a pivotal role in the future of Law.
 
 ## References
 
