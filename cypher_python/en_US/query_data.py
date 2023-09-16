@@ -30,57 +30,41 @@ def print_query_result(title: str, query: str):
 
     print(f"{title}\n{separator}\n{result}\n\n")
 
-# Recuperar as alíneas associadas a um determinado artigo:
-title = "Recuperar as alíneas associadas a um determinado artigo"
-query = "MATCH (a:Artigo {numero: 'artigo 13'})-[:POSSUI_PARAGRAFO]->(p:Paragrafo)-[:POSSUI_ALINEA]->(al:Alinea) RETURN al.numero as numero_alinea, a.numero as numero_artigo, p.numero as numero_processo"
+# query is used to retrieve specific information related to a judge named 'judge 3' and their involvement in judicial decisions that reference acts, with a filter applied to cases falling under the area of law 'Environmental Law':
+title = "query is used to retrieve specific information related to a judge named 'judge 3' and their involvement in judicial decisions that reference acts, with a filter applied to cases falling under the area of law 'Environmental Law'."
+query = "MATCH (j:Judge {judge_name: 'judge 3'})-[:MAKES]->(d:JudicialDecision)-[:REFERENCES]->(a:Act) " + \
+        "MATCH (c:Case)<-[:BELONGS_TO_CASE]-(d) " + \
+        "WHERE (c.area_of_law = 'Environmental Law') " + \
+        "RETURN a.act_number"
 print_query_result(title, query)
 
-# Todas as decisões judiciais associadas a um determinado processo:
-title = "Todas as decisões judiciais associadas a um determinado processo"
-query = "MATCH (p:Processo {numero: " + str(11) + "})<-[:PERTENCE_AO_PROCESSO]-(dj:DecisaoJudicial) RETURN dj.numero as numero_da_decisao, p.numero as numero_do_processo"
+# Query is used to retrieve specific information related to cases in the field of "Environmental Law" that involve judicial decisions referring to "Chapter 2" and the attorneys representing those cases.
+title = "Query is used to retrieve specific information related to cases in the field of 'Environmental Law' that involve judicial decisions referring to 'Chapter 2' and the attorneys representing those cases."
+query = "MATCH (c:Case {area_of_law: 'Environmental Law'})<-[:BELONGS_TO_CASE]-(jd:JudicialDecision)-[:REFERENCES]->(ch:Chapter {chapter_number: 'chapter 2'})" + \
+        "MATCH (attorney:Attorney)-[:REPRESENTS]->(c) " + \
+        "RETURN c.case_number as Number, c.area_of_law as Area_of_Law, attorney.attorney_name as Attorney"
 print_query_result(title, query)
 
-# Todos os advogados envolvidos em um processo específico
-title = "Todos os advogados envolvidos em um processo específico"
-query = "MATCH (p:Processo {numero: " + str(1) + "})<-[:ENVOLVIDO_EM]-(a:Advogado) RETURN a.nome as nome, a.registro_OAB as registro_OAB"
+# Query is used to retrieve specific information related to cases in the field of "Environmental Law" that involve judicial decisions referencing "Act 1.
+title = "Query is used to retrieve specific information related to cases in the field of 'Environmental Law' that involve judicial decisions referencing 'Act 1.'"
+query = "MATCH (c:Case {area_of_law: 'Environmental Law'})<-[:BELONGS_TO_CASE]-(jd:JudicialDecision)-[:REFERENCES]->(act:Act {act_number: 'act 1'}) " + \
+        "RETURN c, act, jd"
 print_query_result(title, query)
 
-# Todas as partes relacionadas a um um processo específico
-title = "Todas as partes relacionadas a um um processo específico"
-query = "MATCH (p:Processo {numero: " + str(1) + "})<-[:ENVOLVIDA_EM]-(pa:Parte) RETURN pa.nome as nome_da_parte, p.numero as numero_do_processo"
+# Query you provided is used to retrieve data from a graph database where legal cases (represented as nodes labeled "Case") are related to judicial decisions (labeled "JudicialDecision"). These judicial decisions, in turn, reference sections and subsections of some legal text.
+title = "Query you provided is used to retrieve data from a graph database where legal cases (represented as nodes labeled 'Case') are related to judicial decisions (labeled 'JudicialDecision'). These judicial decisions, in turn, reference sections and subsections of some legal text."
+query = "MATCH (c:Case)<-[:BELONGS_TO_CASE]-(jd:JudicialDecision) " + \
+        "MATCH (jd)-[:REFERENCES]->(section:Section) " + \
+        "MATCH (jd)-[:REFERENCES]->(subsection:Subsection) " + \
+        "RETURN c, jd, section, subsection"
 print_query_result(title, query)
 
-title = "Todas as partes relacionadas a um um processo específico"
-query = "MATCH (p:Processo {numero: " + str(57) + "})<-[:ENVOLVIDA_EM]-(pa:Parte) RETURN pa.nome as nome_da_parte, p.numero as numero_do_processo"
-print_query_result(title, query)
-
-# Recuperar todas as leis associadas a uma decisão judicial específica
-title = "Recuperar todas as leis associadas a uma decisão judicial específica"
-query = "MATCH (dj:DecisaoJudicial {numero: 'decisao 123'})-[:FAZ_REFERENCIA_A]->(l:Lei) RETURN dj.numero as decisao, l.numero as numero_da_lei, l.titulo as titulo_da_lei"
-print_query_result(title, query)
-
-# Recuperar todos os artigos associados a uma decisão judicial específica
-title = "Recuperar todos os artigos associados a uma decisão judicial específica"
-query = "MATCH (dj:DecisaoJudicial {numero: 'decisao 123'})-[:FAZ_REFERENCIA_AO]->(a:Artigo) RETURN dj.numero as decisao, a.numero as numero_do_artigo"
-print_query_result(title, query)
-
-# Recuperar todos os parágrafos associados a uma decisão judicial específica
-title = "Recuperar todos os parágrafos associados a uma decisão judicial específica"
-query = "MATCH (dj:DecisaoJudicial {numero: 'decisao 123'})-[:FAZ_REFERENCIA_AO]->(p:Paragrafo) RETURN dj.numero as decisao, p.numero as numero_do_paragrafo"
-print_query_result(title, query)
-
-# Recuperar todas as alíneas associadas a uma decisão judicial específica
-title = "Recuperar todas as alíneas associadas a uma decisão judicial específica"
-query = "MATCH (dj:DecisaoJudicial {numero: 'decisao 123'})-[:FAZ_REFERENCIA_A]->(al:Alinea) RETURN dj.numero as decisao, al.numero as numero_da_alinea"
-print_query_result(title, query)
-
-# Quais leis que o 'juiz 3' mais referencia nas suas decisoes sobre direito ambiental?
-title = "Quais leis que o 'juiz 3' mais referencia nas suas decisoes sobre direito ambiental?"
-query = "MATCH (j:Juiz {nome: 'juiz 3'})-[:PROFERE]->(d:DecisaoJudicial)-[:FAZ_REFERENCIA_A]->(l:Lei) "
-query += "MATCH (p:Processo)<-[:PERTENCE_AO_PROCESSO]-(d) " 
-query += "WHERE (p.tipo_de_direito = 'Direito Ambiental') "
-query += "RETURN l.numero as Lei, j.nome as Juíz, p.numero as Processo "
-query += "ORDER BY l.numero"
+title = "Query is designed to retrieve and analyze information related to judicial decisions that reference specific sections and subsections."
+query = "MATCH (c:Case)<-[:BELONGS_TO_CASE]-(jd:JudicialDecision) " + \
+        "MATCH (jd)-[:REFERENCES]->(section:Section) " + \
+        "MATCH (jd)-[:REFERENCES]->(subsection:Subsection) " + \
+        "RETURN section.section_number, subsection.subsection_number, COUNT(DISTINCT jd) AS ImpactOfDecisions " + \
+        "ORDER BY ImpactOfDecisions DESC"
 print_query_result(title, query)
 
 
