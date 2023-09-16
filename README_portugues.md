@@ -85,7 +85,7 @@ Como o objetivo do artigo é apresentar de forma mais simples e didática o pote
 
 A imagem abaixo mostra um exemplo da representação gráfica dos nós e das arestas em um banco de dados orientado a grafo:
 
-![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/graph_visualization_example.png?raw=true)
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/pt_BR/graph_visualization_example.png?raw=true)
 
 __
 
@@ -192,7 +192,7 @@ Esta consulta em linguagem Cypher busca recuperar os títulos das Leis referenci
 
 Abaixo a figura representando as conexões:
 
-![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_que_o_juiz_3_mais_se_baseia.png?raw=true)
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/pt_BR/leis_que_o_juiz_3_mais_se_baseia.png?raw=true)
 
 ___
 
@@ -216,7 +216,7 @@ Esta consulta em linguagem Cypher busca as informações sobre os Processos do t
 
 Abaixo a figura representando as conexões:
 
-![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/processos_impactados_por_mudanca_de_artigo.png?raw=true)
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/pt_BR/processos_impactados_por_mudanca_de_artigo.png?raw=true)
 
 ___
 
@@ -237,7 +237,7 @@ Esta consulta em linguagem Cypher busca recuperar os Processos do tipo "Direito 
 
 Abaixo a figura representando as conexões:
 
-![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/lei_alterada_que_pode_impactar_processos.png?raw=true)
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/pt_BR/lei_alterada_que_pode_impactar_processos.png?raw=true)
 
 ___
 
@@ -295,7 +295,7 @@ Esta consulta em linguagem Cypher busca determinar o impacto das Leis, Artigos e
 
 Abaixo a figura representando as conexões:
 
-![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/leis_e_paragrafos_que_tem_maior_impacto_em_decisoes_judiciais.png?raw=true)
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/pt_BR/leis_e_paragrafos_que_tem_maior_impacto_em_decisoes_judiciais.png?raw=true)
 
 ___
 
