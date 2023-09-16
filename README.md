@@ -20,7 +20,7 @@ We can examine four useful instances of how this analysis can apply to Environme
 
 * **"What If" Analysis - Scenario Simulation:**
 
-    Imagine being a attorney who is presented with a new environmental regulation law under discussion in the legislative branch. This proposed law will modify the current law by altering its chapters, sections, and subsections. Utilizing graph analysis, the attorney can address significant inquiries such as, "What will be the impact of the changes to the existing environmental law on the cases I am handling?" Through simulating various scenarios, the attorney can predict possible legal outcomes and be equipped for any adjustments that may occur.
+    Imagine being an attorney who is presented with a new environmental regulation law under discussion in the legislative branch. This proposed law will modify the current law by altering its chapters, sections, and subsections. Utilizing graph analysis, the attorney can address significant inquiries such as, "What will be the impact of the changes to the existing environmental law on the cases I am handling?" Through simulating various scenarios, the attorney can predict possible legal outcomes and be equipped for any adjustments that may occur.
 
 * **Impacts of the Amendment to the Law on a Law Firm's Cases:**
 
@@ -67,7 +67,7 @@ To demonstrate the potential of graph data analysis in the field of Law, we can 
 
     * **Relationship between Judicial Decisions and Acts, Chapters, Section, and Subsections:** (JUDICIAL_DECISION)-[REFERENCES]->(ACT), (JUDICIAL_DECISION)-[REFERENCES]->(CHAPTER), (JUDICIAL_DECISION)-[REFERENCES]->(SECTION) and (JUDICIAL_DECISION)-[REFERENCES]->(SUBSECTION) - Judicial decisions are connected to various legislative acts through different relationships. These relationships help establish clear references within the law. The first relationship means that the decision references the entire legislative act, indicating a reliance on or a broader connection to the entire legal framework. The second relationship specifies that the decision references a particular chapter within the legislative act, offering a more focused context. The third relationship means that the decision references a specific section, highlighting the reliance on or relevance to that particular section of the law. To provide even more detail, the model can include subsections, which connect the judicial decision to specific legal details within a section of the legislative act. These relationships allow for a comprehensive and organized representation of legal references in judicial decisions.
 
-    * **Relationship between Acts, Chapters, Sections, and Subsections:** (ACT)-[CONTAINS]->(CHAPTER), (CHAPTER)-[CONTAINS]->(SECTION), and (SECTION)-[CONTAINS]->(SUBSECTION). These relationships represent the hierarchical structure of legal acts, with acts containing chapters, chapters containing sections, and sections containing subsections. While it's important to note that not all acts adhere to this exact structure, the aim of this article is to demonstrate the potential of graph analysis in the legal context. By modeling legal entities and their interactions within a graph, this approach offers a possible framework for understanding, visualizing, and analyzing legal processes and relationships.
+    * **Relationship between Acts, Chapters, Sections, and Subsections:** (ACT)-[CONTAINS]->(CHAPTER), (CHAPTER)-[CONTAINS]->(SECTION), and (SECTION)-[CONTAINS]->(SUBSECTION). These relationships represent the hierarchical structure of legal acts, with acts containing chapters, chapters containing sections, and sections containing subsections. While it's important to note that not all acts adhere to this exact structure, this article aims to demonstrate the potential of graph analysis in the legal context. By modeling legal entities and their interactions within a graph, this approach offers a possible framework for understanding, visualizing, and analyzing legal processes and relationships.
 
 
 Nodes are represented in parentheses () and edges are represented in square brackets [].
@@ -82,7 +82,7 @@ __
 
 ## Data Used in This Article
 
-The project was developed with the aim of facilitating the rapid generation of fictitious data for testing and demonstrations. Therefore, data related to attorneys, judicial decisions, parties, cases, judges, acts, chapters, sections, and subsections were created sequentially and randomly. This approach allows the system to be quickly populated with information to verify its functionality and perform performance tests.
+The project was developed with the aim to facilitate the rapid generation of fictitious data for testing and demonstrations. Therefore, data related to attorneys, judicial decisions, parties, cases, judges, acts, chapters, sections, and subsections were created sequentially and randomly. This approach allows the system to be quickly populated with information to verify its functionality and perform performance tests.
 
 However, it is important to note that this data structure is flexible and can be easily adapted to represent real data. Simply modify the fields and attributes of the entities to reflect the real information that will be inserted. For example, to replace fictitious data with real data, just replace the names and information in the .csv files with real names and information of attorneys, judicial decisions, parties, etc.
 
@@ -223,7 +223,7 @@ This Cypher query is used to retrieve specific information related to cases in t
 
 1. MATCH (c:Case {area_of_law: "Environmental Law"})<-[:BELONGS_TO_CASE]-(jd:JudicialDecision)-[:REFERENCES]->(act:Act {act_number: 'act 1'}): This part of the query begins by matching 'Case' nodes (represented by c) where the 'area_of_law' property is equal to "Environmental Law." This filters cases specifically within the environmental law field. It then follows an incoming relationship labeled as 'BELONGS_TO_CASE' to find associated 'JudicialDecision' nodes (represented by jd) connected to these cases. From these judicial decisions, it proceeds with an outgoing relationship labeled as 'REFERENCES' to identify 'Act' nodes (represented by act) with an 'act_number' property set to 'act 1'. This narrows the focus to cases within environmental law that reference Act 1.
 
-2. RETURN c, act, jd: Finally, the query returns the matched nodes and relationships: c represents the 'Case' nodes, act represents the 'Act' nodes referencing "Act 1" and jd represents the 'JudicialDecision' nodes associated with these cases and references to Act 1.
+2. RETURN c, act, jd: Finally, the query returns the matched nodes and relationships: c represents the 'Case' nodes, the act represents the 'Act' nodes referencing "Act 1" and jd represents the 'JudicialDecision' nodes associated with these cases and references to Act 1.
 
 Below is the figure representing the connections:
 
