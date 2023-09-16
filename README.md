@@ -229,7 +229,7 @@ This Cypher query is used to retrieve specific information related to cases in t
 
 Below is the figure representing the connections:
 
-![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/pt_BR/amended_act_that_may_impact_cases.png?raw=true)
+![alt text](https://github.com/diegomiranda02/juris-graph-insights/blob/main/images/en_US/amended_act_that_may_impact_cases.png?raw=true)
 
 ___
 
